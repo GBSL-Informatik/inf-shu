@@ -5,6 +5,64 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 > [!NOTE]
 > Compatible with @docusaurus/faster (rspack and swc). 
 
+## TODO Today
+- Add sync mechanism
+- Set up dev and prod credentials in Azure
+- Configure local .env file
+- Set up GitHub Pages Deployment with PROD credentials
+- Set up GitHub API key in backend to enable CMS
+
+## Quickstart
+### Basics
+1. Install and run Docker
+2. Run `yarn global add dotenv-cli`
+
+### Setting up the dev API
+Clone https://github.com/GBSL-Informatik/teaching-api and run `yarn run install`. Complete the following steps within that same repository.
+
+Run `docker compose --file dev_services.compose.yml up` to launch the DB container
+
+The following users are created:
+- Admin: `postgres` / `qSpEx2Zz8BS9`
+- User for DB teaching_api: `teaching_api` / `zW4SMEXLHpXXxxk`
+
+→ For the `teaching-api` DB, the resulting DB URL is `postgresql://teaching_api:zW4SMEXLHpXXxxk@localhost:5432/teaching_api`.
+
+**Note:** To purge and recreate the DB, run `scripts/purge_dev_services.sh` and then re-run ``docker compose --file dev_services.compose.yml up`.
+
+Now, create a `.env` file with the following contents:
+
+```conf
+DATABASE_URL="postgresql://teaching_api:zW4SMEXLHpXXxxk@localhost:5432/teaching_api"
+USER_ID="<Some UUID>"
+USER_EMAIL="<your email>@gbsl.ch"
+USER_ROLE="ADMIN"
+ALLOWED_ORIGINS="http://localhost:3000"
+ALLOW_SUBDOMAINS="false"
+NO_AUTH="true"
+```
+
+Finally, run `yarn run dev` to launch the API.
+
+### Setting up the frontend
+Clone this repository and run `yarn install`. Complete the following steps within that same repository.
+
+Create a `.env` file with the following contents:
+
+```conf
+APP_URL="http://localhost:3000"
+BACKEND_URL="http://localhost:3002"
+DEFAULT_TEST_USER="<your email>@gbsl.ch"
+```
+
+Then, run `yarn run start` and visit `http://localhost:3000`.
+
+### Important files and directories
+_Check https://github.com/SilasBerger/teaching-website for inspiration._
+- `siteConfig.ts`: Configure your website (title, navbar, footer, etc.).
+- `docs/material`: This is where you keep all your teaching materials.
+- `scriptsConfig.yaml`: Here, you distribute your teaching materials to your classes.
+
 ## ENV
 
 | Variable                   | For            | Default                             | Example                         | Description                                                                                                                                                        |
