@@ -6,6 +6,9 @@ _node_modules
 # Production
 /build
 
+versioned_docs
+versioned_sidebars
+
 # Generated files
 .docusaurus
 .cache-loader
