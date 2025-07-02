@@ -6,7 +6,6 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 > Compatible with @docusaurus/faster (rspack and swc). 
 
 ## TODO Today
-- Support aufgabe admonition
 - Set up dev and prod credentials in Azure
 - Discuss:
   - Changing a doc
@@ -17,11 +16,9 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 - Set up GitHub API key in backend to enable CMS
 
 ## Quickstart
-First, run `yarn global add dotenv-cli`.
+First, make sure you have [nvm](https://github.com/nvm-sh/nvm) installed. Clone this repository, `cd` into it and run `nvm use`. Then, run `yarn install`.
 
-Then, clone this repository and run `yarn install`. Complete the following steps within that same repository.
-
-Create a `.env` file with the following contents:
+Now, create a `.env` file with the following contents:
 
 ```conf
 OFFLINE_API=true
