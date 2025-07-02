@@ -9,6 +9,11 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 - Customize landing page
 - Support aufgabe admonition
 - Set up dev and prod credentials in Azure
+- Discuss:
+  - Changing a doc
+  - Adding / removing a doc
+  - Adding a topic to a class
+  - Integrating a missing component from brr teaching website
 - Set up GitHub Pages Deployment with PROD credentials
 - Set up GitHub API key in backend to enable CMS
 
