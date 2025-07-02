@@ -12,6 +12,37 @@ import {
     requestTarget,
     taskStateOverview
 } from './src/siteConfig/navbarItems';
+import {
+    commentPluginConfig,
+    enumerateAnswersPluginConfig,
+    kbdPluginConfig,
+    linkAnnotationPluginConfig,
+    mdiPluginConfig,
+    mediaPluginConfig,
+    pagePluginConfig,
+    pdfPluginConfig,
+    remarkMathPluginConfig,
+    strongPluginConfig
+} from './src/siteConfig/markdownPluginConfigs';
+import { remarkContainerDirectivesConfig } from './website/plugin-configs/remark-container-directives/plugin-config';
+import { remarkLineDirectivesPluginConfig } from './website/plugin-configs/remark-line-directives/plugin-config';
+import remarkContainerDirectives from './website/plugins/remark-container-directives/plugin';
+import remarkLineDirectives from './website/plugins/remark-line-directives/plugin';
+
+const REMARK_PLUGINS = [
+    strongPluginConfig,
+    mdiPluginConfig,
+    mediaPluginConfig,
+    kbdPluginConfig,
+    remarkMathPluginConfig,
+    enumerateAnswersPluginConfig,
+    pdfPluginConfig,
+    pagePluginConfig,
+    [remarkContainerDirectives, remarkContainerDirectivesConfig], // TODO: Resolve this.
+    [remarkLineDirectives, remarkLineDirectivesPluginConfig], // TODO: Resolve this.
+    commentPluginConfig,
+    linkAnnotationPluginConfig
+] as any;
 
 const GIT_COMMIT_SHA = process.env.GITHUB_SHA || Math.random().toString(36).substring(7);
 
@@ -116,6 +147,7 @@ const getSiteConfig: SiteConfigProvider = () => {
             routeBasePath: '',
             versions: versions
         },
+        remarkPlugins: REMARK_PLUGINS,
         personalSpaceDocRootId: 'c6753ed8-2d3f-41f4-9b3d-6568a197ab76',
         gitHub: {
             orgName: 'jesuisse',
