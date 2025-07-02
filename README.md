@@ -6,7 +6,6 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 > Compatible with @docusaurus/faster (rspack and swc). 
 
 ## TODO Today
-Dummy.
 - Discuss:
   - Changing a doc
   - Adding / removing a doc
