@@ -11,9 +11,9 @@ import {
 } from './src/siteConfig/navbarItems';
 import { DevComponentGalleryNavbarItem, DevDocsNavbarItem } from './navbarItems';
 
-/*
 const GIT_COMMIT_SHA = process.env.GITHUB_SHA || Math.random().toString(36).substring(7);
 
+/*
 const SCRIPTS_CONFIG_FILE = 'scriptsConfig.yaml';
 
 const versions: { [key: string]: VersionOptions } = {
@@ -51,7 +51,8 @@ const getSiteConfig: SiteConfigProvider = () => {
             requestTarget,
             personalSpaceOverlay,
             loginProfileButton
-        ].filter((item) => !!item)
+        ].filter((item) => !!item),
+        onBrokenLinks: 'warn'
     };
 };
 
