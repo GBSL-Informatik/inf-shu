@@ -6,9 +6,9 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 > Compatible with @docusaurus/faster (rspack and swc). 
 
 ## TODO Today
-- Add sync mechanism
+- Customize landing page
+- Support aufgabe admonition
 - Set up dev and prod credentials in Azure
-- Configure local .env file
 - Set up GitHub Pages Deployment with PROD credentials
 - Set up GitHub API key in backend to enable CMS
 
@@ -62,6 +62,8 @@ _Check https://github.com/SilasBerger/teaching-website for inspiration._
 - `siteConfig.ts`: Configure your website (title, navbar, footer, etc.).
 - `docs/material`: This is where you keep all your teaching materials.
 - `scriptsConfig.yaml`: Here, you distribute your teaching materials to your classes.
+- `src`: This directory is managed by `teaching-dev` – do **NOT** edit.
+- `website`: The site's custom "src"-type folder for custom components, etc. (not managed by `teaching-dev`). For instance, to integrate components from other sites (e.g. https://github.com/SilasBerger/teaching-website/tree/main/website/components), place them in `website/components`.
 
 ## ENV
 

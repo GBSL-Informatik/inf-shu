@@ -38,7 +38,7 @@ const getSiteConfig: SiteConfigProvider = () => {
     }
 
     return {
-        title: 'Unterricht P. Schuppli',
+        title: 'Informatik P. Schuppli',
         tagline: 'Informatik',
         url: 'https://inf-shu.gbsl.website',
         siteStyles: ['website/css/custom.scss'],

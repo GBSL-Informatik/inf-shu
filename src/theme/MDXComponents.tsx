@@ -11,6 +11,9 @@ import Answer from '@tdev-components/Answer';
 import Solution from '@tdev-components/documents/Solution';
 import MdxComment from '@tdev-components/documents/MdxComment';
 import MdxPage from '@tdev-components/MdxPage';
+import QuillV2 from '@tdev-components/documents/QuillV2';
+import TaskState from '@tdev-components/documents/TaskState';
+import TabItem from '@theme/TabItem';
 
 export default {
     // Re-use the default mapping
@@ -22,7 +25,11 @@ export default {
     Figure: Figure,
     SourceRef: SourceRef,
     Answer: Answer,
+    QuillV2: QuillV2,
+    String: String,
     Solution: Solution,
+    TaskState: TaskState,
     MdxPage: MdxPage,
-    MdxComment: MdxComment
+    MdxComment: MdxComment,
+    TabItem: TabItem
 };
