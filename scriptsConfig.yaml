@@ -3,7 +3,7 @@
         fms.28Fd: 0
     mappings:
         - section: /index.mdx
-          material: /99-Structure/klassen/28Fd/index.mdx
+          material: /Structure/klassen/28Fd/index.mdx
         - section: 01-Onboarding
           material: /Onboarding-2025
         - section: 02-Algorithmen
