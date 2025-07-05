@@ -32,7 +32,7 @@ export const DevDocsNavbarItem: NavbarItem | null = isDev
 
 export const DevComponentGalleryNavbarItem: NavbarItem | null = isDev
     ? {
-          to: 'docs/tdev/mdi',
+          to: 'docs/tdev/gallery',
           label: '🔧 Tdev',
           position: 'right'
       }
