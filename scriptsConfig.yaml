@@ -8,3 +8,5 @@
           material: /Onboarding-2025
         - section: 02-Algorithmen
           material: /Algorithmen
+        - section: 03-Programmieren
+          material: /Programmieren-Python
