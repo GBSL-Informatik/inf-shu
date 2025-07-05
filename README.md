@@ -6,14 +6,12 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 > Compatible with @docusaurus/faster (rspack and swc). 
 
 ## TODO Today
-Dummy.
+- Ensure Python execution works as intended
 - Discuss:
   - Changing a doc
   - Adding / removing a doc
   - Adding a topic to a class
   - Integrating a missing component from brr teaching website
-- Set up GitHub Pages Deployment with PROD credentials
-- Set up GitHub API key in backend to enable CMS
 
 ## Quickstart
 First, make sure you have [nvm](https://github.com/nvm-sh/nvm) installed. Clone this repository, `cd` into it and run `nvm use`. Then, run `yarn install`.
