@@ -8,11 +8,13 @@ import DefContent from '@tdev-components/CodeDefBox/DefContent';
 import Figure from '@tdev-components/Figure';
 import SourceRef from '@tdev-components/Figure/SourceRef';
 import Answer from '@tdev-components/Answer';
+import String from '@tdev-components/documents/String';
 import Solution from '@tdev-components/documents/Solution';
 import MdxComment from '@tdev-components/documents/MdxComment';
 import MdxPage from '@tdev-components/MdxPage';
 import QuillV2 from '@tdev-components/documents/QuillV2';
 import TaskState from '@tdev-components/documents/TaskState';
+import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 export default {
@@ -31,5 +33,6 @@ export default {
     TaskState: TaskState,
     MdxPage: MdxPage,
     MdxComment: MdxComment,
+    Tabs: Tabs,
     TabItem: TabItem
 };
