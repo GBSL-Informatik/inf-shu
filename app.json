@@ -1,7 +1,0 @@
-{
-    "scripts": {
-        "dokku": {
-            "predeploy": "cd /app/www && yarn install && yarn run build"
-        }
-    }
-}
