@@ -151,7 +151,7 @@ const docusaurusConfig = withSiteConfig().then(async (siteConfig) => {
         showEditThisPage: siteConfig.showEditThisPage ?? ('always' satisfies ShowEditThisPage),
         showEditThisPageOptions:
           siteConfig.showEditThisPageOptions ??
-          (['github', 'github-dev', 'cms'] satisfies EditThisPageOption[]),
+          (['github', 'github-dev'] satisfies EditThisPageOption[]),
         editThisPageCmsUrl: siteConfig.editThisPageCmsUrl ?? '/cms/',
         tdevConfig: siteConfig.tdevConfig ?? ({} satisfies Partial<TdevConfig>)
       } satisfies TdevCustomFields,
@@ -171,7 +171,8 @@ const docusaurusConfig = withSiteConfig().then(async (siteConfig) => {
           mdxCrossCompilerCache: true,
           ssgWorkerThreads: true
         },
-        experimental_vcs: 'default-v2'
+        experimental_vcs: 'default-v2',
+        // experimental_router: 'hash'
       },
       webpack: {
         jsLoader: (isServer) => {
@@ -378,7 +379,7 @@ const docusaurusConfig = withSiteConfig().then(async (siteConfig) => {
       } satisfies Preset.ThemeConfig,
       plugins: [
         sassPluginConfig,
-        dynamicRouterPluginConfig,
+        dynamicRouterPluginConfig(siteConfig),
         rsDoctorPluginConfig,
         [
           aliasConfigurationPlugin,
@@ -398,7 +399,7 @@ const docusaurusConfig = withSiteConfig().then(async (siteConfig) => {
             remarkPlugins: REMARK_PLUGINS,
             rehypePlugins: REHYPE_PLUGINS,
             beforeDefaultRemarkPlugins: BEFORE_DEFAULT_REMARK_PLUGINS,
-            editUrl: `/cms/${ORGANIZATION_NAME}/${PROJECT_NAME}/`,
+            editUrl: `/`,
             ...pagesConfig
           }
         ],
