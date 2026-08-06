@@ -23,7 +23,10 @@ jobs:
         run: yarn install
       - name: Build Site
         env:
-          OFFLINE_API: indexedDB
+          APP_URL: ${{ vars.APP_URL }}
+          BACKEND_URL: ${{ vars.BACKEND_URL }}
+          GH_OAUTH_CLIENT_ID: ${{ vars.GH_OAUTH_CLIENT_ID}}
+          SITE_CONFIG_PATH: ${{ vars.SITE_CONFIG_PATH }}
         run: yarn build
         working-directory: .
       - name: Upload Build Artifact
