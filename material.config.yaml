@@ -2,4 +2,7 @@ pages: []
 docs:
   - from: packages/tdev/material-sync/README.mdx
     to: tdev-website/docs/intro/03-class-management/index.mdx
-29Fa: []
+29Fa:
+  - from: docs/Algorithmik/
+    as: 01-Algorithmik
+    ignore: []
