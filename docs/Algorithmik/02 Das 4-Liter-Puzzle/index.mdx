@@ -1,0 +1,108 @@
+---
+page_id: 698d3403-e83c-4209-82e2-76035c976324
+---
+
+# Das 4-Liter-Rätsel
+
+Schau dir den folgenden kurzen Ausschnitt aus dem Film "Stirb Langsam 3" an. In dieser Szene müssen 
+die beiden Hauptfiguren ein Rätsel lösen, um eine Bombe zu entschärfen:
+
+<video src="resources/Stirb-langsam-4-Gallonen.mp4" type="video/mp4" controls></video>
+
+## Wichtiges und unwichtiges
+
+Nicht alle Informationen, die im Film gezeigt werden, sind für die Lösung des Rätsels wichtig.
+Beispiele für Dinge, die nicht wichtig sind:
+
+   * Die Farbe der Eimer
+   * Der Ort, wo die Eimer und die Bombe stehen
+   * Ob die Eimer mit Wasser oder mit Coca-Cola gefüllt werden
+
+Hingegen gibt es wichtige Informationen:
+
+    * Die Eimer haben ein Fassungsvermögen von 3 und 5 Litern
+    * Die Bombe muss mit exakt 4 Litern Wasser entschärft werden
+    * Die Eimer können beliebig oft gefüllt und geleert werden
+    * Es gibt keine Möglichkeit, die Eimer zu markieren, um zu wissen,
+      wie viel Wasser sich darin befindet
+    
+## Grundoperationen
+
+Um das Rätsel zu lösen, haben wir nur eine eine begrenzte Auswahl von
+Dingen zur Verfügung, die wir tun können (wegrennen können wir 
+beispielsweise nicht und auch nicht nur ungefähr schätzen, wieviel 
+Wasser wir in einen Eimer füllen). 
+
+Wir nennen die Dinge, die wir tun können, **Grundoperationen**. 
+Eine ist unten bereits gegeben. 
+
+   1. Wir können den 5-Liter-Eimer vollständig füllen.
+
+Es gibt noch 5 weitere Grundoperationen, die wir ausführen können. Kannst du
+sie alle finden?
+
+:::aufgabe[Aufgabe 1: Grundoperationen]
+<Answer type="state" id="f5f53f3a-aa7a-44ac-8c7b-db7f5c789f05" />
+
+Finde die restlichen fünf Grundoperationen:
+
+   1. Wir können den 5-Liter-Eimer vollständig füllen.
+   2.
+   3.
+   4.
+   5.
+   6.
+
+
+<Solution id="848be934-c19d-4d3d-95fc-ed0e1faf23c5">
+   1. Wir können den 5-Liter-Eimer vollständig füllen.
+   2. Wir können den 3-Liter-Eimer vollständig füllen.
+   3. Wir können den 5-Liter-Eimer vollständig leeren.
+   4. Wir können den 3-Liter-Eimer vollständig leeren.
+   5. Wir können den 5-Liter-Eimer in den 3-Liter-Eimer schütten (bis der 3-Liter-Eimer voll ist).
+   6. Wir können den 3-Liter-Eimer in den 5-Liter-Eimer schütten (bis der 5-Liter-Eimer voll ist).
+</Solution>
+:::
+
+## Lösungssuche
+
+Dein Ziel ist es, den 5-Liter-Eimer mit genau 4 Litern zu füllen. Dazu musst du eine
+Schritt-für-Schritt-Anleitung notieren, bei denen jeder Schritt nur aus genau einer
+der 6 möglichen Grundoperationen besteht:
+
+![](resources/algorithm_flowchart_start.svg)
+
+Deine Anleitung könnte ungefähr so anfangen (die Kübel musst du nicht zeichnen,
+aber die Kästen und Pfeile schon - G steht für 'Grosser Eimer', K für 'Kleiner Eimer').
+
+Du darfst natürlich jede Grundoperation so oft verwenden, wie du willst. Es gibt zwei
+sinnvolle Lösungen. Mit "sinnvoll" ist gemeint, dass sich keine unnötigen Operationen
+in deiner Anleitung befinden.
+
+:::aufgabe[Aufgabe 2: Lösung 1]
+<Answer type="state" id="7f4f79fd-7b4b-4faa-8aa3-5b3185fd2f3b" />
+
+Finde eine der beiden möglichen Lösungen und zeichne sie wie oben dargestellt.
+
+<Solution id="79559f8b-aa4b-4f73-ac72-2a960a5bd380">
+
+</Solution>
+:::
+
+:::aufgabe[Aufgabe 3: Lösung 2]
+<Answer type="state" id="f9fe76fa-496a-4b3b-aa45-7b0762527693" />
+
+Zusatzaufgabe: Wenn du die erste Lösung gefunden hast, versuche, 
+auch noch die 2. Lösung zu finden.
+<Solution id="0913c461-493f-4da7-9c27-85a5c7c78287">
+
+</Solution>
+:::
+
+## Bewertung der Lösung
+
+Wenn du beide Lösungen gefunden hast, musst du dich für eine entscheiden.
+Welcher Anleitung würdest du folgen, um die Bombe zu entschärfen, und
+weshalb?
+
+

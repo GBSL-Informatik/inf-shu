@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="44.983185mm"
+   height="23.772486mm"
+   viewBox="0 0 44.983186 23.772486"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="binary_tree_key_value.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="147.27236"
+     inkscape:cy="-65.227898"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="1"
+     fit-margin-left="1"
+     fit-margin-right="1"
+     fit-margin-bottom="1"
+     inkscape:window-width="1508"
+     inkscape:window-height="1227"
+     inkscape:window-x="2942"
+     inkscape:window-y="152"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-91.531316,-4.7945874)">
+    <g
+       id="g836-0"
+       transform="translate(20.209552,-64.203169)">
+      <rect
+         y="79.619507"
+         x="72.471764"
+         height="12.000735"
+         width="20.805305"
+         id="rect815-6"
+         style="opacity:1;vector-effect:none;fill:#f6ffd5;fill-opacity:1;stroke:#445500;stroke-width:0.30000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         y="73.02813"
+         x="72.471764"
+         height="6.5913773"
+         width="20.805304"
+         id="rect815-3-1"
+         style="opacity:1;vector-effect:none;fill:#dde9af;fill-opacity:1;stroke:#445500;stroke-width:0.30000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="97.505692"
+       y="13.287154"
+       id="text840-5"><tspan
+         sodipodi:role="line"
+         id="tspan838-54"
+         x="97.505692"
+         y="13.287154"
+         style="stroke-width:0.26458332">Gabor</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="94.228302"
+       y="19.700489"
+       id="text1037-7"><tspan
+         sodipodi:role="line"
+         id="tspan1035-6"
+         x="94.228302"
+         y="19.700489"
+         style="stroke-width:0.26458332">999 12 22</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="95.34507"
+       y="24.197445"
+       id="text1037-9-5"><tspan
+         sodipodi:role="line"
+         id="tspan1035-4-6"
+         x="95.34507"
+         y="24.197445"
+         style="stroke-width:0.26458332">Lengnau</tspan></text>
+    <path
+       style="fill:#808080;stroke:#d40000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 110.17102,11.978908 7.9375,-4.441222"
+       id="path1350"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="119.06245"
+       y="8.4748716"
+       id="text840-5-9"><tspan
+         sodipodi:role="line"
+         id="tspan838-54-3"
+         x="119.06245"
+         y="8.4748716"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';fill:#d40000;stroke-width:0.26458332">Schlüssel</tspan></text>
+    <path
+       style="fill:#a02c2c;stroke:#d40000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 111.49394,21.853532 10.20536,1.889879"
+       id="path1350-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#d40000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="122.72335"
+       y="24.916836"
+       id="text840-5-9-4"><tspan
+         sodipodi:role="line"
+         id="tspan838-54-3-5"
+         x="122.72335"
+         y="24.916836"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';fill:#d40000;stroke-width:0.26458332">Werte</tspan></text>
+  </g>
+</svg>
