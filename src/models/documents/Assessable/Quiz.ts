@@ -1,15 +1,10 @@
-import {
-    TypeDataMapping,
-    Document as DocumentProps,
-    AssessableType,
-    DocumentModelType
-} from '@tdev-api/document';
+import { TypeDataMapping, Document as DocumentProps, AssessableType } from '@tdev-api/document';
 import { Source } from '@tdev-models/iDocument';
 import DocumentStore from '@tdev-stores/DocumentStore';
-import { action, computed, observableRef, reaction } from 'mobx';
+import { action, computed, observableRef } from 'mobx';
 import iAssessable, { Assessement, Correctness, CorrectnessColors } from './iAssessable';
 import { range } from 'es-toolkit/math';
-import { shuffle, sortBy } from 'es-toolkit/array';
+import { shuffle } from 'es-toolkit/array';
 import type { Props as QuizProps } from '@tdev-components/documents/Assessable/Quiz';
 import { AssessableMeta } from './AssessableMeta';
 import { mdiTimelineQuestionOutline } from '@mdi/js';
@@ -143,10 +138,14 @@ class Quiz extends iAssessable<AssessableType> implements iAssessable<Assessable
 
                 return summary;
             },
-            { correctness: Correctness.NA, scoring: { pointsAchieved: 0, maxPoints: 0 } } as Assessement
+            {
+                correctness: Correctness.NA,
+                scoring: { pointsAchieved: 0, maxPoints: this.missingQuestionModelCount }
+            } as Assessement
         );
+        const allAnswered = this.missingQuestionModelCount === 0 && this.hits === this.maxHits;
         const isAllNA = correctness.every((c) => c === Correctness.NA);
-        const isAllCorrect = !isAllNA && correctness.every((c) => c === Correctness.Correct);
+        const isAllCorrect = allAnswered && !isAllNA && correctness.every((c) => c === Correctness.Correct);
         const isAllIncorrect =
             !isAllNA &&
             !isAllCorrect &&
@@ -174,8 +173,18 @@ class Quiz extends iAssessable<AssessableType> implements iAssessable<Assessable
     }
 
     @computed
+    get missingQuestionModelCount(): number {
+        return this.questionIds.size - this.questions.length;
+    }
+
+    @computed
+    get isNA(): boolean {
+        return this.naCount === this.questionCount;
+    }
+
+    @computed
     get naCount(): number {
-        return this.questions.reduce((sum, q) => sum + (q.isNA ? 1 : 0), 0);
+        return this.questions.reduce((sum, q) => sum + (q.isNA ? 1 : 0), this.missingQuestionModelCount);
     }
 
     @computed
@@ -185,7 +194,7 @@ class Quiz extends iAssessable<AssessableType> implements iAssessable<Assessable
 
     @computed
     get maxHits(): number {
-        return this.questions.reduce((sum, q) => sum + q.maxHits, 0);
+        return this.questions.reduce((sum, q) => sum + q.maxHits, this.missingQuestionModelCount);
     }
 
     @computed
@@ -195,7 +204,7 @@ class Quiz extends iAssessable<AssessableType> implements iAssessable<Assessable
 
     @computed
     get misses(): number {
-        return this.questions.reduce((sum, q) => sum + (q.misses ?? 0), 0);
+        return this.questions.reduce((sum, q) => sum + (q.misses ?? 0), this.missingQuestionModelCount);
     }
 
     get data(): TypeDataMapping['quiz'] {
@@ -208,14 +217,23 @@ class Quiz extends iAssessable<AssessableType> implements iAssessable<Assessable
 
     get editingIconState() {
         return {
-            path: mdiTimelineQuestionOutline,
-            color: this.isAssessed ? CorrectnessColors[this.correctness] : IfmColors.gray
+            path: this.icon,
+            color: this.isAssessed ? CorrectnessColors[this.correctness] : IfmColors.gray,
+            title: this.isAssessed
+                ? this.assessment?.scoring
+                    ? `${this.assessment.scoring.pointsAchieved}/${this.assessment.scoring.maxPoints}`
+                    : `${this.hits}/${this.maxHits}`
+                : 'N/A'
         };
     }
 
     @computed
     get meta(): ModelMeta {
         return (this._meta as ModelMeta) ?? DEFAULT_META;
+    }
+
+    get icon(): string {
+        return mdiTimelineQuestionOutline;
     }
 }
 
