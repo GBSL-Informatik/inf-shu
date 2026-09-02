@@ -1,0 +1,307 @@
+---
+page_id: ef4060c7-7194-46aa-a10e-4975d6eabb2b
+---
+
+# Variablen
+
+Schaue dir noch einmal das Turtle-Programm an, welches ein Pentagon zeichnet:
+
+```py live_py slim
+from turtle import *
+
+forward(100)
+left(72)
+forward(100)
+left(72)
+forward(100)
+left(72)
+forward(100)
+left(72)
+forward(100)
+left(72)
+```
+
+Wenn wir dieses Pentagon grösser oder kleiner zeichnen wollen, müssen wir die Argumente der 5 `forward`-Befehle
+anpassen. Das ist umständlich. Schöner wäre es, wir müssten das Programm nur an einem einzigen Ort ändern.
+
+Das geht tatsächlich, und zwar, indem wir statt die tatsächliche Schrittanzahl (100 Schritte vorwärts) einen
+Platzhalter für diese Schritte verwenden:
+
+```py live_py slim
+from turtle import *
+
+seitenlänge = 100
+
+forward(seitenlänge)
+left(72)
+forward(seitenlänge)
+left(72)
+forward(seitenlänge)
+left(72)
+forward(seitenlänge)
+left(72)
+forward(seitenlänge)
+left(72)
+```
+
+Den Namen `seitenlänge` können wir frei wählen, wir hätten auch `s` oder `x` oder `maxli` verwenden
+können. Der Name fungiert als Platzhalter für den Wert 100. Dafür sorgt die Zeile
+
+    seitenlänge = 100
+
+Das ist *nicht* eine mathematische Gleichung, sondern eine **Zuweisung**: Sie **bindet** den Namen 
+`seitenlänge` an den Wert 100.
+
+Solche Platzhalter nenen wir **Variablen**.
+
+Wenn du die Grösse des Pentagons ändern willst, musst du dies nun nur noch an einer einzigen Stelle tun.
+Probiere es aus:
+
+:::aufgabe[Aufgabe 1: Pentagon mit variabler Grösse]
+<Answer type="state" id="200d93fa-eb22-41d6-b0f0-fc4defbefad8" />
+
+Passe den Wert für `seitenlänge` an, um Pentagone zeichnen zu lassen, welche
+doppelt so gross oder halb so gross sind wie das Original.
+
+```py live_py title=pentagon_variable_size.py id=29c09140-c42c-4d7c-b34f-6932c76c5a50
+from turtle import *
+
+seitenlänge = 100
+
+forward(seitenlänge)
+left(72)
+forward(seitenlänge)
+left(72)
+forward(seitenlänge)
+left(72)
+forward(seitenlänge)
+left(72)
+forward(seitenlänge)
+left(72)
+
+```
+<Solution id="1636bc31-bd55-4e41-89c1-b024167541f7">
+
+Folgendes Programm zeichnet ein Pentagon mit Seitenlänge 200 - halb so gross wie das Original:
+
+```py live_py slim
+from turtle import *
+
+seitenlänge = 50
+
+forward(seitenlänge)
+left(72)
+forward(seitenlänge)
+left(72)
+forward(seitenlänge)
+left(72)
+forward(seitenlänge)
+left(72)
+forward(seitenlänge)
+left(72)
+
+```
+</Solution>
+:::
+
+## Variablen behalten ihre Werte nicht für immer
+
+Eine Zuweisung gilt nicht für immer. Variablen sind keine Konstanten, d.h. sie müssen
+nicht über das ganze Programm hinweg an die gleichen Werte gebunden sein. Hier ist ein
+Beispiel, welches dir zeigt, wie der Wert einer Variablen ändern kann:
+
+```py live_py slim
+lustiger_komiker = 'Mr Bean'
+print(lustiger_komiker)
+lustiger_komiker = 'John Cleese'
+print(lustiger_komiker)
+```
+
+Variablen können also an einen neuen Wert gebunden werden, wenn eine neue Zuweisung 
+für den gleichen Namen ausgeführt wird.
+
+Das bedeutet auch, dass du eine Variable erst verwenden kannst, wenn du ihr einen Wert
+zugewiesen hast. Es hilft nicht, dass im Programm später irgendwann ein Wert zugewiesen
+wird, wenn er **jetzt** gebraucht wird:
+
+```py live_py slim
+print(lustiger_komiker)
+lustiger_komiker = 'Mr Bean'
+```
+
+Der kryptische rote Text ist eine Fehlermeldung. Python beklagt sich, dass der Name
+`lustiger_komiker` in Zeile 1 undefiniert ist, d.h. dass der Name nicht an einen Wert
+gebunden ist. Python kann den Wert nicht anzeigen, weil der Wert erst in der nächsten
+Zeile zugewiesen wird!
+
+
+:::aufgabe[Aufgabe 2: Korrigere das Programm]
+<Answer type="state" id="6e98e0de-424e-47eb-91de-b9d1e1ba9024" />
+
+Der BMI (Body Mass Index) ist ein grobes Mass dafür, ob dein Körpergewicht ungefähr
+im Normbereich liegt. Ein BMI zwischen ca 19 und 24 gilt für junge Erwachsene als 
+Normalgewicht. Für Kinder und Jugendliche sowie für sehr muskulöse Menschen ist der BMI
+allerdings nicht aussagekräftig (für Kinder und Jugendliche wird das "normale" Körpergewicht
+über Perzentilenkurven bewertet). 
+
+Der BMI wird wie folgt berechnet:
+
+    BMI = Körpergewicht in kg / (Körpergrösse in m)<sup>2</sup>
+
+Korrigiere das folgende Programm so, dass es funktioniert und keine Fehlermeldung
+mehr produziert.
+```py live_py title=undefined_name.py id=c8a5224f-991b-483f-8bde-9736ed472ca6
+bmi = körpergewicht / (körpergrösse/100.0)**2
+print("Dein BMI ist", bmi)
+
+# körpergewicht in kg
+körpergewicht = 60
+# körpergrösse in cm
+körpergrösse = 158
+```
+<Solution id="b291d85b-1932-445e-9d15-173826f88141">
+
+```py live_py slim
+# körpergewicht in kg
+körpergewicht = 60
+# körpergrösse in cm
+körpergrösse = 158
+
+bmi = körpergewicht / (körpergrösse/100.0)**2
+print("Dein BMI ist", bmi)
+```
+</Solution>
+:::
+
+
+## Variablen speichern Werte, nicht Ausdrücke
+
+Eine Variable hat immer einen *Namen* und einen *Wert*, an den der Name gebunden ist. Der 
+Wert kann eine Zahl sein oder ein String oder ein anderer Datentyp:
+
+    seitenlänge = 100
+
+    lustiger_komiker = "Mr Bean"
+
+Variablen können auch Ergebnisse von *Ausdrücken* (Rechnungen) speichern:
+
+    körpergewicht_in_gramm = 62 * 1000
+
+Diese Zuweisung bindet den Namen `körpergewicht_in_gramm` an den Wert 62000. Das wird 
+wichtig, wenn du Code wie den folgenden hast:
+
+    körpergewicht = 62
+
+    körpergewicht_in_gramm = körpergewicht * 1000
+
+Was passiert mit dem Wert von `körpergewicht_in_grammn`, wenn du nachträglich den Wert
+von `körpergewicht` anpasst? Du kannst es mit folgendem Programm ausprobieren:
+
+```py live_py slim
+
+körpergewicht = 62
+körpergewicht_in_gramm = körpergewicht * 1000
+
+
+körpergewicht = 57
+
+print("Dein Körpergewicht in Gramm:", körpergewicht_in_gramm)
+
+```
+
+Was hast du erwartet? Das Programm könnte zwei Werte ausgeben: 
+
+   1. 57000, wenn `körpergewicht_in_gramm` mit der Änderung des 
+   Körpergewichts neu berechnet wird.
+   1. 62000, wenn die nachträgliche Änderung von `körpergewicht` keinen 
+   Einfluss auf `körpergewicht_in_gramm` hat
+
+Wenn du das Programm ausführst, siehst du, dass Option 2 die Richtige
+ist. Das kommt daher, dass eine Zuweisung nicht eine mathenmatische 
+Gleichung im mathematischen Sinn ist. Die Zeile
+
+    körpergewicht_in_gramm = körpergewicht * 1000
+
+bedeutet also nicht, dass `körpergewicht_in_gramm` *immer* 1000 mal grösser ist
+als `körpergewicht`, sondern dass in dem Moment, in dem die Zuweisung ausgeführt
+wird, der Ausdruck auf der rechten Seite der Zuweisung *ausgewertet* wird und der 
+Name an das **Ergebnis** gebunden wird, *nicht* an den Ausdruck bzw die Rechnung!
+
+Deshalb kannst du auch mathenmatisch unsinnige Zuweisungen vornehmen wie die folgende:
+
+```py live_py slim
+x = 2
+x = x + 1
+print(x)
+```
+
+Die Zeile
+
+    x = x + 1
+
+macht mathenmatisch keinen Sinn und bringt dir im Mathematikunterricht eine ungenügende
+Note ein. In der Informnatik ist es aber eine häufig verwendete Zuweisung, die folgendermassen
+behandelt wird:
+
+   1. Zuerst schaut Python nach, an welchen Wert `x` gebunden ist (2)
+   2. Dann addiert Python 1 zu diesem Wert hinzu (Ergebnis 3)
+   3. Zuletzt wird der Name `x` an das Ergebnis des Ausdrucks auf der rechten Seite (also 3)
+   gebunden.
+
+Deshalb gibt die `print`-Anweisung den Wert 3 aus.
+
+:::aufgabe[Aufgabe 3: Pentagon-Winkel berechnen]
+<Answer type="state" id="cf2c4229-fcde-44df-ba0c-6769434c95f3" />
+
+Im Pentagon-Programm haben wir 5 Anweisungen der Form `left(72)`. Den
+Winkel (72 Grad) hast du vielleicht durch ausprobieren gefunden. Du hättest
+ihn aber auch ausrechnen können:
+
+Wenn du dir überlegst, dass die Turtle am Ende, wenn sie das Pentagon gezeichnet hat, wieder in 
+die gleiche Richtung schaut wie am Anfang, ist klar, dass sie sich genau einmal um sich selbst 
+(und damit um 360°) gedreht haben muss. Da das Pentagon 5 Ecken hat, muss sie sich also bei jeder
+Ecke um 360°/5 = 72° drehen.
+
+Verbessere das Programm so, dass du einen neuen Variablennamen einführst, den du an das Ergebnis
+dieser Rechnung bindest.
+
+```py live_py title=pentagon_variable_angle.py id=5affd150-2c80-442f-acf9-165dde21b2b0
+from turtle import *
+
+seitenlänge = 100
+
+forward(seitenlänge)
+left(72)
+forward(seitenlänge)
+left(72)
+forward(seitenlänge)
+left(72)
+forward(seitenlänge)
+left(72)
+forward(seitenlänge)
+left(72)
+
+```
+<Solution id="81667f77-653c-4b6b-87b1-7b92623131b1">
+
+```py live_py slim
+from turtle import *
+
+seitenlänge = 100
+winkel = 360 / 5
+
+forward(seitenlänge)
+left(winkel)
+forward(seitenlänge)
+left(winkel)
+forward(seitenlänge)
+left(winkel)
+forward(seitenlänge)
+left(winkel)
+forward(seitenlänge)
+left(winkel)
+
+```
+</Solution>
+:::
+
