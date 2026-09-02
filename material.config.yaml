@@ -6,3 +6,6 @@ docs:
   - from: docs/Algorithmik/
     as: 01-Algorithmik
     ignore: []
+  - from: docs/Programmieren/
+    as: 02-Programmieren
+    ignore: []
