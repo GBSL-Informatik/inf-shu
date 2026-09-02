@@ -47,8 +47,8 @@ left(72)
 Den Namen `seitenlänge` können wir frei wählen, wir hätten auch `s` oder `x` oder `maxli` verwenden
 können. Der Name fungiert als Platzhalter für den Wert 100. Dafür sorgt die Zeile
 
-    seitenlänge = 100
-
+    `seitenlänge = 100`
+    
 Das ist *nicht* eine mathematische Gleichung, sondern eine **Zuweisung**: Sie **bindet** den Namen 
 `seitenlänge` an den Wert 100.
 
@@ -179,20 +179,20 @@ print("Dein BMI ist", bmi)
 Eine Variable hat immer einen *Namen* und einen *Wert*, an den der Name gebunden ist. Der 
 Wert kann eine Zahl sein oder ein String oder ein anderer Datentyp:
 
-    seitenlänge = 100
+    `seitenlänge = 100`
 
-    lustiger_komiker = "Mr Bean"
+    `lustiger_komiker = "Mr Bean"`
 
 Variablen können auch Ergebnisse von *Ausdrücken* (Rechnungen) speichern:
 
-    körpergewicht_in_gramm = 62 * 1000
+    `körpergewicht_in_gramm = 62 * 1000`
 
 Diese Zuweisung bindet den Namen `körpergewicht_in_gramm` an den Wert 62000. Das wird 
 wichtig, wenn du Code wie den folgenden hast:
 
-    körpergewicht = 62
+    `körpergewicht = 62`
 
-    körpergewicht_in_gramm = körpergewicht * 1000
+    `körpergewicht_in_gramm = körpergewicht * 1000`
 
 Was passiert mit dem Wert von `körpergewicht_in_grammn`, wenn du nachträglich den Wert
 von `körpergewicht` anpasst? Du kannst es mit folgendem Programm ausprobieren:
@@ -202,14 +202,13 @@ von `körpergewicht` anpasst? Du kannst es mit folgendem Programm ausprobieren:
 körpergewicht = 62
 körpergewicht_in_gramm = körpergewicht * 1000
 
-
 körpergewicht = 57
 
 print("Dein Körpergewicht in Gramm:", körpergewicht_in_gramm)
 
 ```
 
-Was hast du erwartet? Das Programm könnte zwei Werte ausgeben: 
+Das Programm könnte theoretisch zwei unterschiedliche Werte ausgeben: 
 
    1. 57000, wenn `körpergewicht_in_gramm` mit der Änderung des 
    Körpergewichts neu berechnet wird.
@@ -220,7 +219,7 @@ Wenn du das Programm ausführst, siehst du, dass Option 2 die Richtige
 ist. Das kommt daher, dass eine Zuweisung nicht eine mathenmatische 
 Gleichung im mathematischen Sinn ist. Die Zeile
 
-    körpergewicht_in_gramm = körpergewicht * 1000
+    `körpergewicht_in_gramm = körpergewicht * 1000`
 
 bedeutet also nicht, dass `körpergewicht_in_gramm` *immer* 1000 mal grösser ist
 als `körpergewicht`, sondern dass in dem Moment, in dem die Zuweisung ausgeführt
@@ -237,7 +236,7 @@ print(x)
 
 Die Zeile
 
-    x = x + 1
+    `x = x + 1`
 
 macht mathenmatisch keinen Sinn und bringt dir im Mathematikunterricht eine ungenügende
 Note ein. In der Informnatik ist es aber eine häufig verwendete Zuweisung, die folgendermassen
