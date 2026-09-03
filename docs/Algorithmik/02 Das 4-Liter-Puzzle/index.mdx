@@ -7,7 +7,16 @@ page_id: 698d3403-e83c-4209-82e2-76035c976324
 Schau dir den folgenden kurzen Ausschnitt aus dem Film "Stirb Langsam 3" an. In dieser Szene müssen 
 die beiden Hauptfiguren ein Rätsel lösen, um eine Bombe zu entschärfen:
 
-<video src="resources/Stirb-langsam-4-Gallonen.mp4" type="video/mp4" controls></video>
+<video controls width="600px">
+<source src="resources/Stirb-langsam-4-Gallonen.mp4" type="video/mp4"></source>
+</video>
+[Stirb Langsam 3 - Auschnitt](resources/Stirb-langsam-4-Gallonen.mp4), 20th Century Fox 
+
+*Hinweis: Im Film wird von **"Gallonen"** gesprochen. Dies ist ein amerikanisches Volumenmass,
+wir verwenden in Europa stattdessen Liter. Eine Gallone entspricht ungefähr 3.8 Litern.*
+
+Anhand des 4-Liter-Rätsels werden wir genauer sehen, was genau einen Algorithmus ausmacht.
+
 
 ## Wichtiges und unwichtiges
 
@@ -17,6 +26,9 @@ Beispiele für Dinge, die nicht wichtig sind:
    * Die Farbe der Eimer
    * Der Ort, wo die Eimer und die Bombe stehen
    * Ob die Eimer mit Wasser oder mit Coca-Cola gefüllt werden
+   * Dass sich die Hauptdarsteller bei der Lösung des Rätsel streiten
+   * Ob wir die Wassermenge in Litern oder Gallonen messen (solange 
+     die Waage in der Bombe mit der gleichen Einheit misst!)
 
 Hingegen gibt es wichtige Informationen:
 
@@ -73,11 +85,11 @@ der 6 möglichen Grundoperationen besteht:
 ![](resources/algorithm_flowchart_start.svg)
 
 Deine Anleitung könnte ungefähr so anfangen (die Kübel musst du nicht zeichnen,
-aber die Kästen und Pfeile schon - G steht für 'Grosser Eimer', K für 'Kleiner Eimer').
+aber die Kästen und Pfeile schon - G steht für '**G**rosser Eimer', K für '**K**leiner Eimer').
 
 Du darfst natürlich jede Grundoperation so oft verwenden, wie du willst. Es gibt zwei
-sinnvolle Lösungen. Mit "sinnvoll" ist gemeint, dass sich keine unnötigen Operationen
-in deiner Anleitung befinden.
+sinnvolle Lösungen. "Sinnvoll" sind Lösungen, wenn sie keine unnötigen Schritte
+enthalten.
 
 :::aufgabe[Aufgabe 2: Lösung 1]
 <Answer type="state" id="7f4f79fd-7b4b-4faa-8aa3-5b3185fd2f3b" />
@@ -85,15 +97,15 @@ in deiner Anleitung befinden.
 Finde eine der beiden möglichen Lösungen und zeichne sie wie oben dargestellt.
 
 <Solution id="79559f8b-aa4b-4f73-ac72-2a960a5bd380">
-
+![](resources/algorithm_flowchart_4gallons_solution1.svg)
 </Solution>
 :::
 
 :::aufgabe[Aufgabe 3: Lösung 2]
 <Answer type="state" id="f9fe76fa-496a-4b3b-aa45-7b0762527693" />
 
-Zusatzaufgabe: Wenn du die erste Lösung gefunden hast, versuche, 
-auch noch die 2. Lösung zu finden.
+Wenn du die erste Lösung gefunden hast, versuche, auch noch die 
+zweite Lösung zu finden.
 <Solution id="0913c461-493f-4da7-9c27-85a5c7c78287">
 
 </Solution>
@@ -105,4 +117,49 @@ Wenn du beide Lösungen gefunden hast, musst du dich für eine entscheiden.
 Welcher Anleitung würdest du folgen, um die Bombe zu entschärfen, und
 weshalb?
 
+## Algorithmen bewirken Zustandsänderungen
+
+Wenn du dir die Lösungen anschaust, siehst du, dass sich die beiden Eimer
+und damit auch das Problem an sich in verschiedenen **Zuständen** befinden
+können. Drei davon sind hier abgebildet:
+
+![](resources/algorithm_states_examples.svg)
+
+Die Eimer starten in leerem Zustand. Das Rätsel ist gelöst, wenn
+wir einen Zustand erreichen, in dem der grosse Eimer mit 4 Litern Wasser
+gefüllt ist. 
+
+Mit **Zustand** meinen wir nicht die Menge Wasser in *einem* der Eimer,
+sondern den **Gesamtzustand** des Systems, also die Verteilung des Wassers
+auf die beiden Eimer zu einem bestimmten Zeitpunkt während der Lösung des
+Rätsels.
+
+Wenn wir den Zustand des Systems beschreiben wollen, reicht es aus, zwei
+Zahlen festzuhalten - die Menge Wasser, die sich im grossen Eimer befindet, 
+und die Menge Wasser, die sich im kleinen Eimer befindet.
+
+Du kannst über Algorithmen auch anhand der Zustandsänderungen des Gesamtsystems
+nachdenken. Probleme, die algorithmisch lösbar sind, haben immer exakt 
+beschreibbare Zustände, und die Algorithmen beschreiben den Weg vom
+Startzustand über eine Reihe weiterer möglicher Zustände bis
+zum Endzustand.
+
+:::aufgabe[Zusatzaufgabe: Alle möglichen Zustände des Wasserrätsels finden]
+<Answer type="state" id="f9fe76fa-496a-4b3b-aa45-7b0762527693" />
+
+Was denkst du: Ist für das 4-Liter-Rätsel jeder Zustand möglich, d.h. kannst
+du vom Startzustand nur über eine Folge der 6 definierten Grundoperationen 
+jede mögliche Kombination von Füllständen der beiden Eimer erreichen? 
+
+Ist es beispielsweise möglich, einen Zustand zu erreichen, in dem im grossen
+Eimer genau 1 Liter Wasser ist?
+
+![](resources/algorithm_states_is_G1l_possible.svg)
+
+Schreibe alle möglichen Zustände auf, in denen sich das 4-Liter-Rätsel während seiner
+Lösung befinden kann.
+<Solution id="0913c461-493f-4da7-9c27-85a5c7c78287">
+
+</Solution>
+:::
 
