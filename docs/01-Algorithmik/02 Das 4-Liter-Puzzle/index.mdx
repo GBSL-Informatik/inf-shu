@@ -7,7 +7,7 @@ page_id: 698d3403-e83c-4209-82e2-76035c976324
 Schau dir den folgenden kurzen Ausschnitt aus dem Film "Stirb Langsam 3" an. In dieser Szene müssen 
 die beiden Hauptfiguren ein Rätsel lösen, um eine Bombe zu entschärfen:
 
-::video[./resources/Stirb-langsam-4-Gallonen.mp4]{width="500px"}
+::video[./resources/Stirb-langsam-4-Gallonen.mp4]
 
 [Stirb Langsam 3 - Auschnitt](resources/Stirb-langsam-4-Gallonen.mp4), 20th Century Fox 
 
@@ -55,7 +55,7 @@ sie alle finden?
 
 :::aufgabe[Aufgabe 1: Grundoperationen]
 
-Finde die restlichen fünf Grundoperationen:
+Schreibe alle 6 Grundoperationen auf.
 
 <Answer type="text" id="f5f53f3a-aa7a-44ac-8c7b-db7f5c789f05" />
 
@@ -116,14 +116,32 @@ nur 6 Schritte hat, schaue bei der vorherigen Aufgabe nach!
 ## Bewertung der Lösung
 
 Wenn du beide Lösungen gefunden hast, musst du dich für eine entscheiden.
+
+:::aufgabe[Aufgabe 4: Bewertung der Lösung]
+<Answer type="state" id="5ea73a39-90d9-46e0-ab4f-c93a0818a4c5" />
+
+Welche der Lösungen würdest du verwenden, um die Bombe zu entschärfen, und weshalb?
+
+<Solution id="77978ea5-25ea-4d12-8201-95a17bbc29ed">
+Lösung 1. Sie hat 2 Schritte weniger, weshalb sie wahrscheinlich die schnellere ist.
+Das spielt eine Rolle, weil wir unter Zeitdruck stehen.
+
+Du solltest mitnehmen: Oft gibt es für Probleme mehrere Lösungen, aber nicht alle
+sind gleich effizient. Wenn wir daran interessiert sind, möglichst schnelle 
+Algorithmen zu finden, dann optimieren wir auf **Zeiteffizienz**.
+
+Es gibt auch andere Gütekriterien für Algorithmen, z.B. ihre **Platzeffizienz** (d.h.
+wieviel Speicherplatz sie benötigen, um die Lösung zu finden). 
+</Solution>
+:::
+
 Welcher Anleitung würdest du folgen, um die Bombe zu entschärfen, und
 weshalb?
 
 ## Algorithmen bewirken Zustandsänderungen
 
-Wenn du dir die Lösungen anschaust, siehst du, dass sich die beiden Eimer
-und damit auch das Problem an sich in verschiedenen **Zuständen** befinden
-können. Drei davon sind hier abgebildet:
+Das Rätsel kann sich während seiner Lösung in verschiedenen **Zuständen** 
+befinden. Drei davon sind hier abgebildet:
 
 ![](resources/algorithm_states_examples.svg)
 
@@ -142,7 +160,7 @@ und die Menge Wasser, die sich im kleinen Eimer befindet.
 
 Du kannst über Algorithmen auch anhand der Zustandsänderungen des Gesamtsystems
 nachdenken. Probleme, die algorithmisch lösbar sind, haben immer exakt 
-beschreibbare Zustände. Die Grundoperationen beschreiben die  
+beschreibbare Zustände. Die Grundoperationen beschreiben die
 **möglichen Übergänge** von einem Zustand zum nächsten. Algorithmen sind dazu 
 da, einen Weg vom Startzustand zum Endzustand zu finden:
 

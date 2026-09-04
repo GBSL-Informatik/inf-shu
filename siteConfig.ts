@@ -17,7 +17,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 const GIT_COMMIT_SHA = process.env.GITHUB_SHA || Math.random().toString(36).substring(7);
 const getSiteConfig: SiteConfigProvider = () => {
     return {
-        title: 'Informatik',
+        title: 'Unterrichtsmaterial',
         tagline: 'shu - Gymnasium Biel-Seeland',
         url: 'https://shu.gbsl.website',
         gitHub: {
@@ -61,6 +61,10 @@ const getSiteConfig: SiteConfigProvider = () => {
                         {
                             label: 'Python',
                             to: 'https://www.python.org/'
+                        },
+                        {
+                            label: 'Thonny',
+                            to: 'https://www.thonny.org'
                         }
                     ]
                 },
@@ -90,7 +94,7 @@ const getSiteConfig: SiteConfigProvider = () => {
                             <div style="display: flex; flex-direction: column; align-items: center;">
                               <img style="height: 1.6em" src="/img/by-nc-sa.eu.svg" alt="CC-BY-NC-SA">
                               <div>
-                                Text und Bilder von shu, Ausnahmen sind gekennzeichnet. 
+                                Text und Bilder &copy; Pascal Schuppli, Ausnahmen sind gekennzeichnet. 
                               </div>
                             </div>
                           </a>
