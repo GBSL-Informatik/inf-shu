@@ -9,3 +9,18 @@ docs:
   - from: docs/Programmieren/
     as: 02-Programmieren
     ignore: []
+  - from: docs/09 Grundlagenwissen
+    as: 09-Grundlagenwissen
+    ignore: []
+30Gb:
+  - from: docs/Algorithmik/
+    as: 01-Algorithmik
+    ignore: []
+30Ge:
+  - from: docs/Algorithmik/
+    as: 01-Algorithmik
+    ignore: []
+30Gd:
+  - from: docs/Algorithmik/
+    as: 01-Algorithmik
+    ignore: []
