@@ -3,24 +3,21 @@ docs:
   - from: packages/tdev/material-sync/README.mdx
     to: tdev-website/docs/intro/03-class-management/index.mdx
 29Fa:
-  - from: docs/Algorithmik/
+  - from: docs/01-Algorithmik/
     as: 01-Algorithmik
     ignore: []
-  - from: docs/Programmieren/
+  - from: docs/02-Programmieren-OFI/
     as: 02-Programmieren
     ignore: []
-  - from: docs/09 Grundlagenwissen
-    as: 09-Grundlagenwissen
-    ignore: []
 30Gb:
-  - from: docs/Algorithmik/
+  - from: docs/01-Algorithmik/
     as: 01-Algorithmik
     ignore: []
 30Ge:
-  - from: docs/Algorithmik/
+  - from: docs/01-Algorithmik/
     as: 01-Algorithmik
     ignore: []
 30Gd:
-  - from: docs/Algorithmik/
+  - from: docs/01-Algorithmik/
     as: 01-Algorithmik
     ignore: []
