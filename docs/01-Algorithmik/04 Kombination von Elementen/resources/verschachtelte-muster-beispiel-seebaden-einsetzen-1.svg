@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="161.10339mm"
+   height="103.62561mm"
+   viewBox="0 0 161.10339 103.62561"
+   version="1.1"
+   id="svg467"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   sodipodi:docname="verschachtelte-muster-beispiel-seebaden-einsetzen-1.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title2">Verschachtelte Muster Seebaden Einsetzen</title>
+  <sodipodi:namedview
+     id="namedview469"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.5946522"
+     inkscape:cx="205.16194"
+     inkscape:cy="101.74014"
+     inkscape:window-width="1264"
+     inkscape:window-height="761"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs464">
+    <marker
+       style="overflow:visible"
+       id="Triangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="TriangleStart"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker2752-8"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         inkscape:connector-curvature="0"
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path2750-4" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker2752-8-2"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         inkscape:connector-curvature="0"
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path2750-4-1" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker2752-8-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         inkscape:connector-curvature="0"
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path2750-4-9" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker2752-8-2-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         inkscape:connector-curvature="0"
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path2750-4-1-2" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-3.7236519,-3.8044413)">
+    <g
+       id="g915"
+       transform="translate(84.023327,-35.937348)"
+       inkscape:export-filename="verschachtelte-muster.png"
+       inkscape:export-xdpi="192.94135"
+       inkscape:export-ydpi="192.94135">
+      <rect
+         y="44.392197"
+         x="25.873232"
+         height="12.983841"
+         width="48.070526"
+         id="rect815"
+         style="opacity:1;vector-effect:none;fill:#fff6d5;fill-opacity:1;stroke:#ffcc00;stroke-width:0.323806;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text821"
+         y="51.884476"
+         x="29.650393"
+         style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#552200;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           style="fill:#552200;stroke-width:0.264583"
+           y="51.884476"
+           x="29.650393"
+           sodipodi:role="line"
+           id="tspan9290">Ziehe Badekleider an</tspan></text>
+    </g>
+    <g
+       id="g1772"
+       transform="translate(-100.46032,-62.480306)">
+      <rect
+         y="109.41634"
+         x="130.83939"
+         height="12.983841"
+         width="48.070526"
+         id="rect815-9"
+         style="fill:#d5ffd5;fill-opacity:1;stroke:#005500;stroke-width:0.323806;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.29522, 0.323806;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text821-2"
+         y="116.90862"
+         x="135.67488"
+         style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           style="font-size:3.175px;fill:#008000;stroke-width:0.264583"
+           y="116.90862"
+           x="135.67488"
+           sodipodi:role="line"
+           id="tspan9290-0">Beliebiges Flussdiagramm</tspan></text>
+    </g>
+    <g
+       id="g915-0"
+       transform="translate(84.023327,-9.4569453)">
+      <rect
+         y="44.392197"
+         x="25.873232"
+         height="12.983841"
+         width="48.070526"
+         id="rect815-3"
+         style="opacity:1;vector-effect:none;fill:#fff6d5;fill-opacity:1;stroke:#ffcc00;stroke-width:0.323806;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text821-0"
+         y="51.884476"
+         x="32.32465"
+         style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#552200;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           style="fill:#552200;stroke-width:0.264583"
+           y="51.884476"
+           x="32.32465"
+           sodipodi:role="line"
+           id="tspan9290-7">Springe in den See</tspan></text>
+    </g>
+    <g
+       id="g915-0-6"
+       transform="translate(84.023327,17.023457)">
+      <rect
+         y="44.392197"
+         x="25.873232"
+         height="12.983841"
+         width="48.070526"
+         id="rect815-3-1"
+         style="opacity:1;vector-effect:none;fill:#fff6d5;fill-opacity:1;stroke:#ffcc00;stroke-width:0.323806;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text821-0-5"
+         y="51.884476"
+         x="32.32465"
+         style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#552200;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           style="fill:#552200;stroke-width:0.264583"
+           y="51.884476"
+           x="32.32465"
+           sodipodi:role="line"
+           id="tspan9290-7-9">Lass dich trocknen</tspan></text>
+    </g>
+    <g
+       id="g915-0-6-1"
+       transform="translate(84.023327,43.50386)">
+      <rect
+         y="44.392197"
+         x="25.873232"
+         height="12.983841"
+         width="48.070526"
+         id="rect815-3-1-7"
+         style="opacity:1;vector-effect:none;fill:#fff6d5;fill-opacity:1;stroke:#ffcc00;stroke-width:0.323806;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text821-0-5-0"
+         y="51.884476"
+         x="38.145489"
+         style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#552200;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           style="fill:#552200;stroke-width:0.264583"
+           y="51.884476"
+           x="38.145489"
+           sodipodi:role="line"
+           id="tspan9290-7-9-7">Kaufe ein Eis</tspan></text>
+    </g>
+    <rect
+       transform="rotate(45)"
+       y="-4.9334683"
+       x="20.303955"
+       height="16.323204"
+       width="16.323204"
+       id="rect817"
+       style="fill:#ffd5d5;fill-opacity:1;stroke:#aa0000;stroke-width:0.290828;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       style="fill:#d45500;stroke:#aa4400;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="M 133.53471,21.465872 V 33.477199"
+       id="path1266"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#aa4400;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="M 17.872326,34.021636 V 73.798068"
+       id="path1266-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#d45500;stroke:#aa4400;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="M 133.30185,48.352396 V 60.363725"
+       id="path1266-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#d45500;stroke:#aa4400;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="M 133.36631,74.781915 V 86.793236"
+       id="path1266-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#aa4400;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="M 29.333586,22.437227 H 55.496345 V 45.907378"
+       id="path2742-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#aa4400;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 55.986295,59.926288 v 8.17109 H 19.286966"
+       id="path2742-7-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#848484;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.29522, 0.323805;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#TriangleStart);stop-color:#000000"
+       d="M 103.2256,52.947617 H 76.529327"
+       id="path2"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="fill:none;stroke:#848484;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.29522, 0.323805;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect2"
+       width="61.401436"
+       height="103.22561"
+       x="103.22561"
+       y="4.0044413" />
+    <rect
+       style="fill:none;stroke:#848484;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.29522, 0.323805;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect2-9"
+       width="75.63945"
+       height="78.309082"
+       x="3.9236519"
+       y="5.3422632" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;writing-mode:lr-tb;direction:ltr;fill:none;stroke:#848484;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.29522, 0.323805;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#TriangleStart)"
+       x="22.691833"
+       y="12.903201"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="fill:#ff2a2a;fill-opacity:1;stroke:none;stroke-width:0.4"
+         x="22.691833"
+         y="12.903201">if-Anweisung</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;writing-mode:lr-tb;direction:ltr;fill:#803300;stroke:#848484;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.29522, 0.323805;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#TriangleStart)"
+       x="31.085733"
+       y="26.930126"
+       id="text2-0"><tspan
+         sodipodi:role="line"
+         id="tspan2-6"
+         style="fill:#803300;fill-opacity:1;stroke:none;stroke-width:0.4"
+         x="31.085733"
+         y="26.930126">Ja</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;writing-mode:lr-tb;direction:ltr;fill:#803300;stroke:#848484;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.29522, 0.323805;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#TriangleStart)"
+       x="19.909353"
+       y="37.947609"
+       id="text2-0-1"><tspan
+         sodipodi:role="line"
+         id="tspan2-6-8"
+         style="fill:#803300;fill-opacity:1;stroke:none;stroke-width:0.4"
+         x="19.909353"
+         y="37.947609">Nein</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;writing-mode:lr-tb;direction:ltr;fill:#803300;fill-opacity:1;stroke:none;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.29522, 0.323805;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#TriangleStart)"
+       x="139.34274"
+       y="27.667233"
+       id="text3"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         style="stroke-width:0.4"
+         x="139.34274"
+         y="27.667233">Seequenz :-)</tspan></text>
+  </g>
+  <metadata
+     id="metadata2">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Verschachtelte Muster Seebaden Einsetzen</dc:title>
+        <dc:date>2026-09-04</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Pascal Schuppli</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>(c) Pascal Schuppli. Licensed under CC by-nc-sa 4.0</dc:title>
+          </cc:Agent>
+        </dc:rights>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:prohibits
+           rdf:resource="http://creativecommons.org/ns#CommercialUse" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
