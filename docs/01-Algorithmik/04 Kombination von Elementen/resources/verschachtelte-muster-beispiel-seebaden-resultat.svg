@@ -7,7 +7,7 @@
    viewBox="0 0 74.499603 149.93611"
    version="1.1"
    id="svg467"
-   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    sodipodi:docname="verschachtelte-muster-beispiel-seebaden-resultat.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -29,15 +29,16 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.4204826"
-     inkscape:cx="189.06846"
-     inkscape:cy="-96.317897"
-     inkscape:window-width="1264"
-     inkscape:window-height="761"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="layer1" />
+     inkscape:zoom="3.3638608"
+     inkscape:cx="137.93674"
+     inkscape:cy="108.06036"
+     inkscape:window-width="2486"
+     inkscape:window-height="1376"
+     inkscape:window-x="1994"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:pageshadow="2" />
   <defs
      id="defs464">
     <marker
@@ -149,7 +150,9 @@
            style="fill:#aa0000;stroke-width:0.264583"
            y="89.954094"
            x="138.23883"
-           sodipodi:role="line"> temp&gt;25?</tspan></text>
+           sodipodi:role="line"> <tspan
+   style="font-size:3.52778px"
+   id="tspan2161">temp&gt;25?</tspan></tspan></text>
     </g>
     <path
        style="fill:none;stroke:#aa4400;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
@@ -265,7 +268,7 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#aa4400;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
-       d="m 97.436415,144.9784 h 26.162755 v 23.47015"
+       d="m 97.085484,144.9784 h 26.513686 v 23.47015"
        id="path2742-7-2"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccc" />
@@ -275,6 +278,28 @@
        id="path2742-7-0-9"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:0.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="97.931526"
+       y="143.7599"
+       id="text3334"><tspan
+         sodipodi:role="line"
+         id="tspan3332"
+         style="font-size:3.52778px;fill:#aa4400;stroke-width:0.264583"
+         x="97.931526"
+         y="143.7599">Ja</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:0.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="86.998856"
+       y="159.74142"
+       id="text3334-3"><tspan
+         sodipodi:role="line"
+         id="tspan3332-6"
+         style="font-size:3.52778px;fill:#aa4400;stroke-width:0.264583"
+         x="86.998856"
+         y="159.74142">Nein</tspan></text>
   </g>
   <metadata
      id="metadata2">
