@@ -106,16 +106,18 @@ for r in range(40):
    1. Der Name einer Variablen spielt für Python keine Rolle, deshalb können wir ihn frei wählen. `r`
       steht für Radius, also wäre ein passenderer Name `radius`:
 
-   1. Die Kreise werden grösser, weil der Kreis mit einem immer grösseren Radius gezeichnet wird. Das
-      passiert, weil das Argument von `circle`, also `r*5`, immer grösser wird. Die Erklärung
-      dafür ist, dass der Wert der Variablen `r` mit jedem Schleifendurchgang zunimmt.
-      Tatsächlich erhöht sich der Wert von `r` mit jedem Schleifendurchgang um genau 1. r startet mit
-      dem Wert 0 und für den letzten Kreis hat `r` den Wert 39.
-```py live_py title=bessere_muschel.py id=6100da76-3c13-4a8e-be7f-e57683a76e49
+```py live_py slim
 from turtle import *
 for radius in range(40):
     circle(radius*5)
 ```
+
+   2. Die Kreise werden grösser, weil der Kreis mit einem immer grösseren Radius gezeichnet wird. Das
+      passiert, weil das Argument von `circle`, also `r*5`, immer grösser wird. Die Erklärungy
+      dafür ist, dass der Wert der Variablen `r` mit jedem Schleifendurchgang zunimmt.
+      Tatsächlich erhöht sich der Wert von `r` mit jedem Schleifendurchgang um genau 1. r startet mit
+      dem Wert 0 und für den letzten Kreis hat `r` den Wert 39.
+
 </Solution>
 :::
 
@@ -148,9 +150,9 @@ for i in 6:
 
 Der Grund: Die eigentliche Aufgabe der Schleifenariable besteht nicht darin, die Schleifendurchgänge zu 
 zählen - das sieht nur so aus, weil wir bisher die Schleifenvariable nur so verwendet haben. Sie erledigt
-aber eigentlich einen anderen Job: Die for-Schleife wiederholt etwas für jedes Element in einer vorgegebenen
-Liste von Dingen, und die Schleifenvariable wird in jedem Durchgang an das jeweils nächste Element der Liste
-gebunden.
+aber einen anderen Job: Die for-Schleife wiederholt etwas für jedes Element in einer vorgegebenen
+Liste von Werten, und die Schleifenvariable wird in jedem Durchgang an den jeweils nächsten Wert in 
+der Liste gebunden.
 
 Probiere folgenes Programm aus:
 
@@ -161,14 +163,18 @@ for i in [0, 1, 2, 3, 4, 5]:
     left(60)
 ```
 
-Beachte, dass wir das `range(6)` mit dem Ausdruck `[0, 1, 2, 3, 4, 5]` ersetzt haben. Wenn du das Programm
-ausführst, merkst du aber, dass es keine Rolle spielt, ob wir `range` verwenden oder den Ausdruck mit den
-eckigen Klammern - das Resultat ist exakt das Gleiche.
+Beachte, dass wir das `range(6)` mit der Liste `[0, 1, 2, 3, 4, 5]` ersetzt haben (Listen werden in eckige
+Klammern geschrieben). Wenn du das Programm ausführst, merkst du aber, dass es keine Rolle spielt, ob wir
+`range` verwenden oder die Liste - das Resultat ist exakt das Gleiche.
 
-Tatsächlich ist `range()` eine Abkürzung für die Schreibweise mit den eckigen Klammern. Eckige Klammern 
-definieren eine **Liste**, und die for-Schleife funktioniert primär mit Listen. `range(n)` definiert einfach
+Tatsächlich ist `range()` eine Abkürzung, so dass wir nicht eine ganze Liste aufschreiben müssen. Die 
+for-Schleife will nämlich eigentlich eine Liste hinter dem `in` haben, und `range(n)` erzeugt einfach
 nur eine Liste für uns, welche alle Ganzzahlen von 0 bis n-1 enthält.
 
+:::note[Hinweis - Vereinfachung]
+Das stimmt so nicht ganz. `range()` liefert zwar alle Werte, die in der entsprechenden Liste stehen würden,
+erzeugt aber tatsächlich etwas anderes. Die Details sind aber hier für das Verständnis eher hinderlich.
+:::
 
 Hier sind weitere Beispiele, welche die tatsächliche Funktionsweise der for-Schleife verdeutlichen: Einmal
 mit einer Liste von Zahlen:
