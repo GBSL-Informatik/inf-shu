@@ -88,19 +88,133 @@ for r in range(40):
 ```
 
 :::aufgabe[Aufgabe 2: Muschel]
-<Answer type="state" id="83f5d7a2-2aaa-4b6f-b85d-ab7d9ef68a7c" />
+<Answer type="state" id="77f88411-445c-42f3-85ce-8b9e018e1c43" />
 
 Überlege dir:
    1. Weshalb werden die Kreise immer grösser?
-   2. Im obigen Programm wurde `r` tatt wie bisher `i` verwendent zwischen dem `for` und dem `in`.
+   2. Im obigen Programm wurde `r` statt wie bisher `i` verwendent zwischen dem `for` und dem `in`.
       Wofür steht es wohl? Kannst du einen besseren Namen dafür finden und das Programm entsprechend
       anpassen?
 
-```py live_py title=bessere_muschel.py id=dbcdc47a-63e2-499a-8d1d-f0eda7ded69a
+```py live_py title=bessere_muschel.py id=7c92920d-2193-4c7d-a3a3-9aa8449a1a3d
 from turtle import *
 for r in range(40):
     circle(r*5)
 ```
 
+<Solution id="627db1df-7d5d-4417-8bc4-0b818e3f2a48">
 
+   1. Die Kreise werden grösser, weil der Kreis mit einem immer grösseren Radius gezeichnet wird. Das
+      passiert, weil das Argument von `circle`, also `r*5`, immer grösser wird. Die Erklärung
+      dafür ist, dass der Wert der Variablen `r` mit jedem Schleifendurchgang zunimmt.
+      Tatsächlich erhöht sich der Wert von `r` mit jedem Schleifendurchgang um genau 1. r startet mit
+      dem Wert 0 und für den letzten Kreis hat `r` den Wert 39.
+
+   2. Der Name einer Variablen spielt für Python keine Rolle, deshalb können wir ihn frei wählen. `r`
+      steht für Radius, also wäre ein passenderer Name `radius`:
+
+```py live_py title=bessere_muschel.py id=6100da76-3c13-4a8e-be7f-e57683a76e49
+from turtle import *
+for radius in range(40):
+    circle(radius*5)
+```
+</Solution>
+:::
+
+Die `for`-Schleife zählt für uns jeden Schleifendurchgang mit, indem sie die Variable, die wir zwischen 
+`for` und `in` definieren, in jedem Durchgang automatisch um eins für uns erhöht. Wir nennen diese Variable
+deshalb *Schleifenvariable*.
+
+Du kannst sehen, dass Python hinter den Kulissen für uns arbeitet, wenn du folgenes Programm ausprobierst:
+
+```py live_py slim
+for zähler in range(5):
+    print("In diesem Durchgang ist `zähler`", zähler)
+```
+
+Wenn du das Programm ausführst, siehst, du, dass es von 0 auf 4 zählt. Daran, dass Python bei 0 statt bei
+1 beginnt, wirst du dich gewöhnen müssen - viele Programmiersprachen beginnen gerne mit 0 zu zählen.
+
+## Für jedes Ding in einer Liste von Dingen...
+
+Hast du dich gefragt, wozu das `range(...)` genau gut ist? Warum muss man das schreiben? Wenn 
+Programmierer gerne unnötiges weglassen, warum heisst es dann nicht einfach
+
+```py live_py slim
+from turtle import *
+
+for i in 6:
+    forward(100)
+    left(60)
+```
+
+Der Grund: Die eigentliche Aufgabe der Schleifenariable besteht nicht darin, die Schleifendurchgänge zu 
+zählen - das sieht nur so aus, weil wir bisher die Schleifenvariable nur so verwendet haben. Sie erledigt
+aber eigentlich einen anderen Job: Die for-Schleife wiederholt etwas für jedes Element in einer vorgegebenen
+Liste von Dingen, und die Schleifenvariable wird in jedem Durchgang an das jeweils nächste Element der Liste
+gebunden.
+
+Probiere folgenes Programm aus:
+
+```py live_py slim id=195ae336-a0b7-4fb6-858e-eba3b12424d9
+from turtle import *
+for i in [0, 1, 2, 3, 4, 5]:
+    circle(100)
+    left(60)
+```
+
+Beachte, dass wir das `range(6)` mit dem Ausdruck `[0, 1, 2, 3, 4, 5]` ersetzt haben. Wenn du das Programm
+ausführst, merkst du aber, dass es keine Rolle spielt, ob wir `range` verwenden oder den Ausdruck mit den
+eckigen Klammern - das Resultat ist exakt das Gleiche.
+
+Tatsächlich ist `range()` eine Abkürzung für die Schreibweise mit den eckigen Klammern. Eckige Klammern 
+definieren eine **Liste**, und die for-Schleife funktioniert primär mit Listen. `range(n)` definiert einfach
+nur eine Liste für uns, welche alle Ganzzahlen von 0 bis n-1 enthält.
+
+:::note
+
+
+Hier sind weitere Beispiele, welche die tatsächliche Funktionsweise der for-Schleife verdeutlichen: Einmal
+mit einer Liste von Zahlen:
+
+```py live_py slim id=801041ee-8d63-455c-97b0-b4115d42cc4d
+from turtle import *
+for i in [10, 20, 30, 40, 50]:
+    print(i)
+```
+
+Und einmal mit einer Liste von Wörtern:
+
+```py live_py slim id=2cfd46fb-17a2-4429-bae1-06a55c0962ed
+from turtle import *
+for word in ['Learn', 'something', 'new', 'every', 'day']:
+    print(word)
+```
+
+Dabei wird die Schleifenvariable `word` nacheinander an jedes
+der Wörer in der Liste gebunden:
+
+![](resources/for_loop_variable_binding.svg)
+
+
+:::aufgabe[Aufgabe 3: Listen abarbeiten]
+<Answer type="state" id="372ff584-af8f-4fb7-91c6-134492b7718f" />
+
+Probiere folgenes Programm aus:
+
+```py live_py slim title=mandala__mit_liste_1.py id=195ae336-a0b7-4fb6-858e-eba3b12424d9
+from turtle import *
+for i in [1, 1, 1, 1, 1, 1]:
+    circle(100)
+    left(60)
+```
+
+Erkläre, weshalb auch dieses Programm das Mandala zeichnet, obwohl die Liste diesmal 
+nur aus Einsen besteht.
+
+<Solution id="a94b17e1-3a9d-438d-a979-d5c311ce4c93">
+
+
+</Solution>
+:::
 

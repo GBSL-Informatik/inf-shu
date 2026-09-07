@@ -8,11 +8,14 @@ docs:
     ignore: []
   - from: docs/02-Programmieren-OFI/
     as: 02-Programmieren
-    ignore: []
+    ignore: ['03-Schleifen mit Turtles']
 30Gb:
   - from: docs/01-Algorithmik/
     as: 01-Algorithmik
     ignore: []
+  - from : docs/02-Programmieren-OFI/
+    as: 02-Programmieren
+    ignore: ['03-FMS-Schleifen mit Turtles']
 30Ge:
   - from: docs/01-Algorithmik/
     as: 01-Algorithmik
