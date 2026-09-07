@@ -90,11 +90,11 @@ for r in range(40):
 :::aufgabe[Aufgabe 2: Muschel]
 <Answer type="state" id="77f88411-445c-42f3-85ce-8b9e018e1c43" />
 
-Überlege dir:
-   1. Weshalb werden die Kreise immer grösser?
-   2. Im obigen Programm wurde `r` statt wie bisher `i` verwendent zwischen dem `for` und dem `in`.
+Überlege dir:   
+   1. Im obigen Programm wurde `r` statt wie bisher `i` verwendent zwischen dem `for` und dem `in`.
       Wofür steht es wohl? Kannst du einen besseren Namen dafür finden und das Programm entsprechend
       anpassen?
+   1. Weshalb werden die Kreise immer grösser?
 
 ```py live_py title=bessere_muschel.py id=7c92920d-2193-4c7d-a3a3-9aa8449a1a3d
 from turtle import *
@@ -103,16 +103,14 @@ for r in range(40):
 ```
 
 <Solution id="627db1df-7d5d-4417-8bc4-0b818e3f2a48">
+   1. Der Name einer Variablen spielt für Python keine Rolle, deshalb können wir ihn frei wählen. `r`
+      steht für Radius, also wäre ein passenderer Name `radius`:
 
    1. Die Kreise werden grösser, weil der Kreis mit einem immer grösseren Radius gezeichnet wird. Das
       passiert, weil das Argument von `circle`, also `r*5`, immer grösser wird. Die Erklärung
       dafür ist, dass der Wert der Variablen `r` mit jedem Schleifendurchgang zunimmt.
       Tatsächlich erhöht sich der Wert von `r` mit jedem Schleifendurchgang um genau 1. r startet mit
       dem Wert 0 und für den letzten Kreis hat `r` den Wert 39.
-
-   2. Der Name einer Variablen spielt für Python keine Rolle, deshalb können wir ihn frei wählen. `r`
-      steht für Radius, also wäre ein passenderer Name `radius`:
-
 ```py live_py title=bessere_muschel.py id=6100da76-3c13-4a8e-be7f-e57683a76e49
 from turtle import *
 for radius in range(40):
@@ -171,8 +169,6 @@ Tatsächlich ist `range()` eine Abkürzung für die Schreibweise mit den eckigen
 definieren eine **Liste**, und die for-Schleife funktioniert primär mit Listen. `range(n)` definiert einfach
 nur eine Liste für uns, welche alle Ganzzahlen von 0 bis n-1 enthält.
 
-:::note
-
 
 Hier sind weitere Beispiele, welche die tatsächliche Funktionsweise der for-Schleife verdeutlichen: Einmal
 mit einer Liste von Zahlen:
@@ -193,7 +189,6 @@ Dabei wird die Schleifenvariable `word` nacheinander an jedes
 der Wörer in der Liste gebunden:
 
 ![](resources/for_loop_variable_binding.svg)
-
 
 :::aufgabe[Aufgabe 3: Listen abarbeiten]
 <Answer type="state" id="372ff584-af8f-4fb7-91c6-134492b7718f" />
@@ -224,7 +219,7 @@ Betrachte die eckige Spirale:
 
 ![](resources/Turtlegrafik-eckige-Spirale.png)
 
-   1. Schau dir anschliessend das folgende Programm an, welches sie produziert, und überlege dir, welche Seite der Spirale wie lang sind.
+   1. Schau dir das folgende Programm an, welches sie produziert, und überlege dir, welche Seite der Spirale wie lang sind.
 
 ```py live_py slim title=mandala__mit_liste_1.py id=deb184f5-b555-47a8-8822-a640ed02f4c7
 from turtle import *
