@@ -223,7 +223,7 @@ nur aus Einsen besteht.
 
 Betrachte die eckige Spirale:
 
-![](resources/Turtlegrafik-eckige-Spirale.png)
+![--width=350](resources/Turtlegrafik-eckige-Spirale.png)
 
    1. Schau dir das folgende Programm an, welches sie produziert, und überlege dir, welche Seite der Spirale wie lang sind.
 
@@ -257,9 +257,7 @@ die beiden folgenden Turtlegrafiken repräsentieren.
 
 Verwende den Befehl `width`, um die Strichdicke zu ändern.
 
-
 <Solution id="d5238397-ab93-4102-aa98-8c39527677d3">
-
 
 ```py live_py slim title=strichdicke_1.py id=ca198146-4c49-4e78-a1e5-685ca1db87aa
 from turtle import *
@@ -275,6 +273,38 @@ for dicke in [3, 1, 3, 1]:
     width(dicke)
     forward(100)
     left(90)
+```
+
+</Solution>
+:::
+
+
+:::aufgabe[Aufgabe 6: Farbige Blume]
+<Answer type="state" id="ff97747c-9cfd-423c-8a91-e00b51994e7a" />
+
+   1. Schreibe ein Programm, welches mit einer for-Schleife und dem Befehl `color`
+   die folgende farbige Turtlegrafik generiert:
+
+![](resources/Turtlegrafik-Colored-Circles.png)
+
+   2. Ändere die Reihenfolge der Farben so ab, dass sich rot und blau abwechseln.
+
+<Solution id="c6613b77-08c3-459b-a6e7-cdf66ecd075e">
+
+```py live_py slim title=farbige_blume_1.py id=ebd5a5f0-2f61-4471-82d5-270cfd2fff02
+from turtle import *
+for farbe in ["red", "violet", "blue", "cyan", "green", "orange"]:
+    color(dicke)
+    circle(100)
+    left(60)
+```
+
+```py live_py slim title=farbige_blume_2.py id=75c8d58a-6595-41d9-a738-a3c4135c6348
+from turtle import *
+for farbe in ["red", "blue", "red", "blue", "red", "blue"]:
+    color(dicke)
+    circle(100)
+    left(60)
 ```
 
 </Solution>
