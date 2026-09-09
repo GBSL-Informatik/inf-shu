@@ -1,0 +1,69 @@
+---
+page_id: c7b9f842-ba40-4e72-854e-75c5ce2b158c
+---
+
+# Lösungsidee
+
+Es gibt einen Lösungsalgorithmus, der für relativ einfache Labyrinthe funktioniert,
+in denen alle Mauern zusammenhängen oder mit der Aussenmauer verbunden sind ("einfach
+zusammenhängende" Labyrinthe). Hier ist er in natürlicher Sprache formuliert:
+
+Rechte-Hand-Algorithmus:
+: *Drehe dich dort, wo du gerade stehst, so lange, bis du auf deiner rechten Seite eine Wand
+hast. Lege nun deine rechte Hand an die rechte Wand des Labyrinths und bewege dich 
+so der Wand entlang, dass du nie den Kontakt zur Wand verlierst. Dann wirst du
+den Ausgang finden.*
+
+So könnte das in einem beliebigen Teil eines Labyrinths aussehen:
+
+![--width=350](resources/maze-wall-following-path.svg)
+
+:::note[Weitere Algorithmen für *beliebige* Labyrinth-Typen]
+
+Es gibt eine Verbesserung des oben beschriebenen Algorithmus, den Pledge-Algorithmus (offenbar
+vom zwölfjährigen Jon Pledge aus Exeter erfunden). Dieser löst das Insel-Problem: Wenn es im 
+Labyrinth "Inseln" oder "Säulen" gibt und man seine Hand an genau so eine Inselwand legt, kann 
+man diese Insel theoretisch ewig umrunden. Der Pledge-Algorithmus kann also mehr Labyrinthe 
+lösen als der Rechte-Hand-Algorithmus.
+
+Weitere Algorithmen funktionieren in *jedem* Labyrinth, egal, wie es aufgebaut ist.
+Diese werden wir hier aber auch nicht betrachten. Auf Wikipedia findest du z.B. die
+[Trémaux'-Methode](https://de.wikipedia.org/wiki/Tr%C3%A9maux%E2%80%99_Methode) dazu.
+:::
+
+## 
+
+Der Lösungsalgorithmus sagt uns, dass wir "der rechten Wand folgen" sollen. Wie machen
+wir das? 
+
+Wir haben bereits Grundoperationen, die wir verwenden können, um uns zu drehen oder
+von einem Feld aufs nächste zu gelangen:
+
+   1. Bewege dich ein Feld vorwärts
+   2. Drehe dich 90 Grad im Uhrzeigersinn
+   3. Drehe dich 90 Grad im Gegenuhrzeigersinn
+   4. Drehe dich nach Norden
+
+
+In welche *Richtung* wir uns jedoch von einem beliebigen Feld im Labyrinth bewegen 
+sollen, hängt davon ab, wie die Wände um uns herum angeordnet sind. 
+
+Da der Algorithmus für beliebige Labyrinthe funktionieren soll, können wir nicht einfach
+blind einem bereits bekannten, vorgegebenen Weg folgen. Den roten Pfad, der in der Illustration
+oben eingezeichnet ist, kann der Algorithmus nicht im Voraus kennen. Er wird diesen Pfad 
+schrittweise entwickeln, während er sich durch das Labyrinth bewegt.
+
+Wir werden also darüber nachdenken müssen, wie sich das Labyrinth so beschreiben lässt, 
+dass wir, egal, auf welchem Feld im Labyrinth wir uns gerade befinden, herausfinden 
+können, in welche Richtung wir uns als nächstes drehen oder bewegen sollen.
+
+Im Moment haben noch keine Operationen, welche uns den *Zustand* des Labyrinths um
+uns herum beschreiben würden, uns also sagen würden, wo sich Wände befinden. 
+Ohne diese Information können wir die zwei wichtigsten Regeln des Lösungsalgorithmus 
+nicht umsetzen:
+
+   1. Wir müssen eine Möglichkeit haben, am Anfang des Algorithmus eine rechte Wand zu finden
+   2. Wir müssen eine Möglichkeit haben, unserer rechten Wand zu folgen.
+
+Wenn wir daraus computertaugliche Grundoperationen machen wollen, müssen wir uns überlegen,
+wie wir für jedes Feld im Labyrinth feststellen können, wie die Wände angeordnet sind.
