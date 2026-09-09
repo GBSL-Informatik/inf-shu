@@ -58,7 +58,7 @@ for i in range(4):
 
 Die beiden Programm erzeugen folgende Ausgaben:
 
-![](resources/Turtlegrafik-Einrückung-circle.png)
+![--width=300](resources/Turtlegrafik-Einrückung-circle.png)
 
 Überlege dir:
 
@@ -223,7 +223,7 @@ nur aus Einsen besteht.
 
 Betrachte die eckige Spirale:
 
-![](resources/Turtlegrafik-eckige-Spirale.png)
+![--width=350](resources/Turtlegrafik-eckige-Spirale.png)
 
    1. Schau dir das folgende Programm an, welches sie produziert, und überlege dir, welche Seite der Spirale wie lang sind.
 
@@ -242,6 +242,70 @@ for s in [100, 180, 200, 300, 350, 400, 450]:
 
 <Solution id="5beeb16d-5854-4e63-9b2f-7ea9e98d2525">
 
+
+</Solution>
+:::
+
+
+:::aufgabe[Aufgabe 5: Breite der Seiten variieren]
+<Answer type="state" id="c5b26b93-7b3d-41d7-8f7d-feff103eba25" />
+
+Schreibe zwei Programme, die jeweils mit einer for-Schleife analog zum Programm in Aufgabe 4
+die beiden folgenden Turtlegrafiken repräsentieren. 
+
+![](resources/Turtlegrafik-Strichdicken-Quadrat.png)
+
+Verwende den Befehl `width`, um die Strichdicke zu ändern.
+
+<Solution id="d5238397-ab93-4102-aa98-8c39527677d3">
+
+```py live_py slim title=strichdicke_1.py id=ca198146-4c49-4e78-a1e5-685ca1db87aa
+from turtle import *
+for dicke in [1, 3, 1, 3]:
+    width(dicke)
+    forward(100)
+    left(90)
+```
+
+```py live_py slim title=strichdicke_2.py id=ca198146-4c49-4e78-a1e5-685ca1db87aa
+from turtle import *
+for dicke in [3, 1, 3, 1]:
+    width(dicke)
+    forward(100)
+    left(90)
+```
+
+</Solution>
+:::
+
+
+:::aufgabe[Aufgabe 6: Farbige Blume]
+<Answer type="state" id="ff97747c-9cfd-423c-8a91-e00b51994e7a" />
+
+   1. Schreibe ein Programm, welches mit einer for-Schleife und dem Befehl `color`
+   die folgende farbige Turtlegrafik generiert:
+
+![](resources/Turtlegrafik-Colored-Circles.png)
+
+   2. Ändere die Reihenfolge der Farben so ab, dass sich rot und blau abwechseln.
+
+<Solution id="c6613b77-08c3-459b-a6e7-cdf66ecd075e">
+
+```py live_py slim title=farbige_blume_1.py id=ebd5a5f0-2f61-4471-82d5-270cfd2fff02
+from turtle import *
+for farbe in ["red", "violet", "blue", "cyan", "green", "orange"]:
+    color(dicke)
+    circle(100)
+    left(60)
+```
+
+```py live_py slim title=farbige_blume_2.py id=75c8d58a-6595-41d9-a738-a3c4135c6348
+from turtle import *
+for farbe in ["red", "blue", "red", "blue", "red", "blue"]:
+    color(dicke)
+    circle(100)
+    left(60)
+```
 
 </Solution>
 :::
