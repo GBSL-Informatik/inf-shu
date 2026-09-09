@@ -20,6 +20,11 @@ docs:
   - from: docs/01-Algorithmik/
     as: 01-Algorithmik
     ignore: []
+  - from: docs/02-Programmieren-OFI/
+    as: 02-Programmieren
+    ignore: ['03-FMS-Schleifen mit Turtles']
+  - from: docs/09-Zusatzmaterial/Programmieren/graphics2d
+    as: 02-Programmieren/09-Zusatzmaterial/graphics2d
 30Gd:
   - from: docs/01-Algorithmik/
     as: 01-Algorithmik
