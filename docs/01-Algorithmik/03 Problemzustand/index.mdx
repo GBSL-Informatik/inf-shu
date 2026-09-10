@@ -1,0 +1,109 @@
+---
+page_id: a20cd66d-c33d-4dbe-baa1-a4260b54f1d0
+---
+
+# Der Zustand eines Problems
+
+Probleme, die algorithmisch lösbar sind, befinden sich während der Lösung immer in 
+einem bestimmten **Zustand**.
+
+In diesem Lernschritt sollte dir klar werden, was mit **Zustand** gemeint ist und
+weshalb es nützlich sein kann, über Probleme anhand ihrer Zustandsänderungen
+nachzudenken.
+
+## Der Zustand des 4-Liter-Rätsels
+
+Das 4-Liter-Rätsel kann sich während seiner Lösung in verschiedenen Zuständen
+befinden. Drei davon sind hier abgebildet:
+
+![](resources/algorithm_states_examples.svg)
+
+Die Eimer starten in leerem Zustand. Das Rätsel ist gelöst, wenn
+wir einen Zustand erreichen, in dem der grosse Eimer mit 4 Litern Wasser
+gefüllt ist. 
+
+Mit **Zustand** meinen wir nicht die Menge Wasser in *einem* der Eimer,
+sondern den **Gesamtzustand** des Systems, also die Verteilung des Wassers
+auf die beiden Eimer zu einem bestimmten Zeitpunkt während der Lösung des
+Rätsels.
+
+Als du dir überlegt hast, was die Grundoperationen für das 4-Liter-Rätsel sind,
+hast du zuerst darüber nachgedacht, welche Teile des Rätsels *relevant*
+sind und welche nicht. 
+
+Der **Zustand** eines algorithmischen Problems ist immer das, was übrig bleibt,
+wenn alle nicht relevanten Informationen entfernt wurden. 
+
+## Minimale Darstellung
+
+Wenn wir den Zustand des Systems beschreiben wollen, reicht es aus, zwei
+Zahlen festzuhalten - die Menge Wasser, die sich im grossen Eimer befindet, 
+und die Menge Wasser, die sich im kleinen Eimer befindet.
+
+Die drei Diagramme von oben enthalten also bereits unnötige Informationen
+(z.B. die Andeutung der Eimer und des Wassers). Eigentlich würden diese 3 
+Zustände auch folgendermassen dargestellt werden können: 
+
+(0, 0)
+
+(2, 3)
+
+(4, 3)
+
+Natürlich können wir diesen Zahlenpaaren (man nennt sie in der Fachsprache **Tupel** [1]) 
+nicht ansehen, dass sie die Füllstände von zwei unterschiedlich grossen Eimern 
+repräsentieren. Das müssen wir wissen!
+
+Wir müssen auch wissen, welche Zahl welchen Füllstand repräsentiert (oben beschreibt die
+erste Zahl immer den grossen Eimer und die zweite Zahl den kleinen Eimer).
+
+## Algorithmen bewirken eine Reihe von Zustandsänderungen
+
+Du kannst über Algorithmen auch anhand der Zustandsänderungen des Gesamtsystems
+nachdenken. Probleme, die algorithmisch lösbar sind, haben immer exakt 
+beschreibbare Zustände. Die Grundoperationen beschreiben die
+**möglichen Übergänge** von einem Zustand zum nächsten. Algorithmen führen
+eine Reihe von Grundoperationen aus, um ein Problem von seinem Startzustand
+in seinem Endzustand zu versetzen - sie finden also den *Weg* vom Startzustand
+zum Endzustand. 
+
+![](resources/algorithm_states_definition.svg)
+
+
+:::aufgabe[Zusatzaufgabe: Alle möglichen Zustände des Wasserrätsels finden]
+<Answer type="state" id="3541e03b-e04c-416e-8a29-c116aa0ba14e" />
+
+Ist für das 4-Liter-Rätsel jeder Zustand möglich, d.h. kannst du vom 
+Startzustand nur über eine Folge der 6 definierten Grundoperationen 
+jede mögliche Kombination von Füllständen der beiden Eimer erreichen? 
+
+Ist es beispielsweise möglich, einen Zustand zu erreichen, in dem in beiden
+Eimern genau 1 Liter Wasser ist?
+
+![](resources/algorithm_states_is_G1l_possible.svg)
+
+Schreibe alle möglichen Zustände auf, in denen sich das 4-Liter-Rätsel während seiner
+Lösung befinden kann.
+<Solution id="de4d0837-e782-4612-bc3a-6c9a9fca892c">
+
+</Solution>
+:::
+
+## Nützlichkeit von Zustandsüberlegungen
+
+Für das Wasserrätsel sind Überlegeungen dazu, welche Zustände überhaupt möglich sind, 
+nützlich, um herauszufinden, wieviele Lösungen es für das Rätsel gibt. Alle möglichen
+Zustände, die 4 Liter im grossen Eimer repräsentieren, sind Lösungen. 
+
+Oft hilft das Nachdenken darüber, wie man den Zustand eines Problems beschreiben kann,
+auch, wichtige Grundoperationen zu finden, über die der Lösungsalgorithmus verfügen sollte. 
+Das Gleiche gilt auch umgekehrt: Wenn wir darüber nachdenken, welche Grundoperationen
+es gibt, hilft uns das auch herauszufinden, wie wir den Zustand des Problems 
+beschreiben können. 
+
+Beides ist nötig, wenn wir den Algorithmus in einer Programmiersprache formulieren wollen, 
+um ihn von einem Computer ausführen zu lassen.
+
+---
+
+[1] bzw 2-Tupel, weil es Tupel sind, die aus 2 Zahlen bestehen
