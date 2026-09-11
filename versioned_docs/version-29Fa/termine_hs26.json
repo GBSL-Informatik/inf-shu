@@ -1,42 +1,42 @@
 [
   {
     "cells": [
-      "11.08.2026",
+      "10.08.2026",
       "Einstieg",
-      "Classrooms, BYOD Basics"
+      "Algorithmik"
     ]
   },
   {
     "cells": [
-      "18.08.2026",
-      "BYOD Basics",
-      "Ziel: Modul 1 fertig"
+      "17.08.2026",
+      "Algorithmik",
+      ""
     ]
   },
   {
     "cells": [
-      "25.08.2026",
-      "BYOD Basics",
-      "Ziel: Modul 2 fertig"
+      "24.08.2026",
+      "Algorithmik",
+      ""
     ]
   },
   {
     "cells": [
-      "01.09.2026",
-      "BYOD Basics",
-      "Ziel: Modul 3+4 fertig"
+      "31.08.2026",
+      "Python + Turtles",
+      ""
     ]
   },
   {
     "cells": [
-      "08.09.2026",
-      "BYOD Basics",
-      "Ziel: Modul 5 fertig"
+      "07.09.2026",
+      "Python",
+      ""
     ]
   },
   {
     "cells": [
-      "15.09.2026",
+      "14.09.2026",
       "Sonderwoche",
       ""
     ],
@@ -44,7 +44,7 @@
   },
   {
     "cells": [
-      "22.09.2026",
+      "21.09.2026",
       "Herbstferien 🏝️",
       ""
     ],
@@ -52,7 +52,7 @@
   },
   {
     "cells": [
-      "29.09.2026",
+      "28.09.2026",
       "Herbstferien 🏝️",
       ""
     ],
@@ -60,72 +60,11 @@
   },
   {
     "cells": [
-      "06.10.2026",
+      "05.10.2026",
       "Herbstferien 🏝️",
-      ""
-    ],
-    "type": "holiday"
-  },
-  {
-    "cells": [
-      "13.10.2026",
-      "BYOD Basics",
-      "Wiederholung"
-    ]
-  },
-  {
-    "cells": [
-      "20.10.2026",
-      "Tag d. Gesundheitsberufe",
-      ""
-    ],
-    "type": "event"
-  },
-  {
-    "cells": [
-      "27.10.2026",
-      "BYOD Basics",
-      "Lerncheck"
-    ],
-    "type": "test"
-  },
-  {
-    "cells": [
-      "10.11.2026",
-      "Informatik Biber",
-      "Vorbereitung"
-    ]
-  },
-  {
-    "cells": [
-      "17.11.2026",
-      "Informatik Biber",
-      "Wettbewerb"
-    ],
-    "type": "event"
-  },
-  {
-    "cells": [
-      "01.12.2026",
-      "Kant. FS-Tag",
-      ""
-    ],
-    "type": "event"
-  },
-  {
-    "cells": [
-      "29.12.2026",
-      "Winterferien ❄️🏂🎄",
-      ""
-    ],
-    "type": "holiday"
-  },
-  {
-    "cells": [
-      "05.01.2027",
-      "Winterferien ❄️🏂🎄",
       ""
     ],
     "type": "holiday"
   }
+
 ]
