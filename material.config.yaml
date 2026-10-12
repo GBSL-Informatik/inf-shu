@@ -4,8 +4,7 @@ docs:
     to: tdev-website/docs/intro/03-class-management/index.mdx
 29Fa:
   - from: docs/01-Algorithmik/
-    as: 01-Algorithmik
-    ignore: ['06 Nicht-triviale Algorithmen']
+    as: 01-Algorithmik    
   - from: docs/02-Programmieren-OFI/
     as: 02-Programmieren
     ignore: ['03-Schleifen mit Turtles']
