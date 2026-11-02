@@ -1,16 +1,16 @@
-import React from 'react';
-import Footer from '@theme-original/DocItem/Footer';
-import type FooterType from '@theme-original/DocItem/Footer';
-import type { WrapperProps } from '@docusaurus/types';
-import styles from './styles.module.scss';
 import { useDoc } from '@docusaurus/plugin-content-docs/client';
-import clsx from 'clsx';
-import Icon from '@mdi/react';
+import type { WrapperProps } from '@docusaurus/types';
 import { mdiOpenInNew } from '@mdi/js';
+import Icon from '@mdi/react';
+import type FooterType from '@theme-original/DocItem/Footer';
+import Footer from '@theme-original/DocItem/Footer';
+import clsx from 'clsx';
+import React from 'react';
+import styles from './styles.module.scss';
 
 type Props = WrapperProps<typeof FooterType>;
 
-export default function FooterWrapper(props: Props): JSX.Element {
+export default function FooterWrapper(props: Props): React.ReactElement {
     const { frontMatter } = useDoc();
     const { sidebar_custom_props } = frontMatter as {
         sidebar_custom_props: { source?: { name: string; ref?: string } };
