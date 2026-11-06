@@ -13,6 +13,8 @@ import {
 } from './src/siteConfig/navbarItems';
 import { brythonCodePluginConfig, yamlLoaderPluginConfig } from './src/siteConfig/pluginConfigs';
 import { themes as prismThemes } from 'prism-react-renderer';
+import type { PluginOptions as PyodidePluginOptions } from '@tdev/pyodide-code/plugin';
+import path from 'node:path';
 
 const GIT_COMMIT_SHA = process.env.GITHUB_SHA || Math.random().toString(36).substring(7);
 const getSiteConfig: SiteConfigProvider = () => {
@@ -118,7 +120,16 @@ const getSiteConfig: SiteConfigProvider = () => {
                 additionalLanguages: ['bash', 'typescript', 'json', 'python', 'armasm']
             }
         },
-        plugins: [brythonCodePluginConfig(), yamlLoaderPluginConfig],
+        plugins: [
+            brythonCodePluginConfig(),
+            [
+                require.resolve('@tdev/pyodide-code/plugin'),
+                {
+                    extensions: [path.join(__dirname, 'website/pyodide/clock')]
+                } satisfies PyodidePluginOptions
+            ],
+            yamlLoaderPluginConfig
+        ],
         docs: {
             lastVersion: 'current',
             routeBasePath: '/',

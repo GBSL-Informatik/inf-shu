@@ -1,10 +1,10 @@
-import React from 'react';
-import styles from './styles.module.scss';
-import clsx from 'clsx';
 import * as MDI from '@mdi/js';
 import Icon from '@mdi/react';
-import _ from 'lodash';
 import { WEEK_DAYS } from '@tdev/helpers/time';
+import clsx from 'clsx';
+import _ from 'es-toolkit/compat';
+import React from 'react';
+import styles from './styles.module.scss';
 
 export enum Type {
     Holiday = 'holiday',
