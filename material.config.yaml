@@ -10,16 +10,14 @@ docs:
     ignore: ['03-Schleifen mit Turtles']
 30Gb:
   - from: docs/01-Algorithmik/
-    as: 01-Algorithmik
-    ignore: [laby_wall_follower_versuch.mdx]
+    as: 01-Algorithmik  
   - from : docs/02-Programmieren-OFI/
     as: 02-Programmieren
     ignore: ['03-FMS-Schleifen mit Turtles']
 
 30Ge:
   - from: docs/01-Algorithmik/
-    as: 01-Algorithmik
-    ignore: [laby_wall_follower_versuch.mdx]
+    as: 01-Algorithmik    
   - from: docs/02-Programmieren-OFI/
     as: 02-Programmieren
     ignore: ['03-FMS-Schleifen mit Turtles']
